@@ -69,10 +69,6 @@ kartenLayer.bmapgrau.addTo(karte);
 //Implementierung Fullscreen Plugin
 karte.addControl(new L.Control.Fullscreen());
 
-var tauern;
-
-tauern = L.geoJSON.ajax("POI_Tauern.geojson").addTo(karte)
-
 //setzt karte auf aktuelle Geolocation
 //Hier Problem, dass KArte immer wieder auf diese Position zurückspringt-> Lösung suchen
 /*
@@ -97,5 +93,19 @@ new L.Control.MiniMap(
     }
 ).addTo(karte);
 
-// die Implementierung der Karte startet hier
+//Versuch Punkte aus gebiete.js zu lesen
+for (let sight of TAUERN){
+    let piktogramm = L.icon({
+        iconUrl: `icons/1.png`,
+        iconSize : 40,
+    });
+    sightpin = L.marker(
+        [sight.geometry.coordinates[0], sight.geometry.coordinates[1]], {
+            icon:piktogramm
+        }
+    ).addTo(karte) 
 
+    sightpin.bindPopup(
+        `<p><b> ${sight.NAME}</b><p>`
+    );
+    }
