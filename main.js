@@ -93,6 +93,16 @@ new L.Control.MiniMap(
     }
 ).addTo(karte);
 
+function hallo (feature, layer)
+{layer.bindPopup("hallo test");
+
+};
+    
+L.geoJSON(tauern,{
+    onEachFeature: hallo
+}).addTo(map);
+
+/*
 //Versuch Punkte aus gebiete.js zu lesen
 for (let sight of TAUERN){
     let piktogramm = L.icon({
@@ -109,3 +119,5 @@ for (let sight of TAUERN){
         `<p><b> ${sight.NAME}</b><p>`
     );
     }
+
+    */

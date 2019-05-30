@@ -1,4 +1,4 @@
-const TAUERN = [
+const tauern = [
     {
         "type": "Feature",
         "properties": {
@@ -4679,5 +4679,4 @@ const TAUERN = [
             "coordinates": [167947.311700000427663, 209270.915200000628829]
         }
     }
-
-]
+];
