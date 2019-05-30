@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Naturschutzgebiete in Tirol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!--Lädt Leaflet Bibliothek-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+    <!--Ajax Plugin-->
+    <script src="plugins/leaflet.ajax.min.js"></script>
+
+    
+    <!--Referenz zu Geojeson/Naturschutzgebiete-->
+    <script src="POI_Tauern.geojson"></script>
+
+    <!-- Fullscreen Plugin -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
+        rel='stylesheet' />
+
+    <!-- Hash Plugin -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js'></script>
+    
+    <!-- MiniMap Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.css"
+        rel="stylesheet" />
+
+     <!-- leaflet-elevation Plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation@latest/leaflet-elevation.css" />
+    <script src="https://unpkg.com/@raruto/leaflet-elevation@latest/leaflet-elevation.js"></script>
+
+    <!--Referenz zu Javascript/ Karte-->
+    <script defer src="main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h3>Naturschutzgebiete</h3>
+        <h4>Übersicht über alle Naturschutzgebiete Tirols</h4>
+        <img src="images/test.jpg" alt="testbild1">
+        <figcaption><em><i class="fas fa-camera-retro"></i> Test Bildunterschrift</em></figcaption>
+
+    </header>
+
+   
+
+    <hr />
+
+    <main>
+        <h1>Überschrift 1</h1>
+        <p>TEXT1
+        </p>
+
+
+
+        <h2>Überschrift2</h2>
+
+        <p>Text2
+        </p>
+
+        <figure>
+            
+            <img src="images/test2.jpg" alt="Testbil2">
+            <figcaption><em><i class="fas fa-camera-retro"></i> Test Bildunterschrift2</em></figcaption>
+        </figure>
+
+        
+        <h2>Überschrift3</h2>
+        <p>Text3</p>
+
+        
+
+        <h3>Karte1</h3>
+        
+        <div id="map"></div>
+            
+
+
+
+       
+    </main>
+
+    <hr />
+
+    <footer>
+        <nav>
+            <a class="gallerie" href="gallerie.html">
+                Gallerie</a>
+            <a class="tabelle" href="tabelle.html">Tabelle </a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
