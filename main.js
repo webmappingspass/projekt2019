@@ -93,14 +93,22 @@ new L.Control.MiniMap(
     }
 ).addTo(karte);
 
-function hallo (feature, layer)
-{layer.bindPopup("hallo test");
 
-};
-    
-L.geoJSON(tauern,{
-    onEachFeature: hallo
-}).addTo(map);
+
+
+L.geoJSON(natura2000).addTo(karte);  
+
+
+/* Beispiel um Gebiete Anhand von Eigenschaften einzufärben
+L.geoJSON(grenzen, {
+    style: function(features) {
+        switch (features.id) {
+            case 'RNA_NATIONALPARK.80a0a831-a0c0-4439-8f80-904c08c7': return {color: "#ff0000"};
+            case 'Democrat':   return {color: "#0000ff"};
+        }
+    }
+}).addTo(karte);
+/*
 
 /*
 //Versuch Punkte aus gebiete.js zu lesen
