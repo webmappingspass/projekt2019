@@ -247,8 +247,8 @@ function funcBurgenland() {
 };
 
 function funcBurgenland() {
-    
-    karte.removeLayer(bundesländer, Kaernten)
+    clearLayers()
+    karte.removeLayer(Kaernten) //Kaernten ist kein Layer??
     Burgenland.addTo(karte)
 };
 
