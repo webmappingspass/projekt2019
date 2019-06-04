@@ -96,12 +96,164 @@ new L.Control.MiniMap(
 
 
 
-L.geoJSON(natura2000).addTo(karte);  
+const bundesländer = L.featureGroup();
+
+var alle = L.geoJson(natura2000);
+
+//Für jedes Bundesland wird eigene Variable und entsprechende Popups erstellt
+//Burgenland
+var Burgenland = L.geoJson(natura2000, {
+            filter: function(feature, layer) {
+            return feature.properties.BUNDESLAND == "Burgenland";
+        }
+}).addTo(karte);
+Burgenland.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+//Kärnten
+var Kaernten = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Kaernten";
+}
+}).addTo(karte);
+Kaernten.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+//Niederösterreich
+var Niederoesterreich = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Niederoesterreich";
+}
+}).addTo(karte);
+Niederoesterreich.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+//Oberösterreich
+var Oberoesterreich = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Oberoesterreich";
+}
+}).addTo(karte);
+Oberoesterreich.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+//Salzburg
+var Salzburg = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Salzburg";
+}
+}).addTo(karte);
+Salzburg.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+//Steiermark
+var Steiermark = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Steiermark";
+}
+}).addTo(karte);
+Steiermark.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+//Tirol
+var Tirol = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Tirol";
+}
+}).addTo(karte);
+Tirol.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+//Wien
+var Wien = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Wien";
+}
+}).addTo(karte);
+Wien.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+//Vorarlberg
+var Vorarlberg = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Vorarlberg";
+}
+}).addTo(karte);
+Vorarlberg.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+
+
+/*
 var layer= L.geoJson(natura2000, {
 }).addTo(karte);
-layer.bindPopup(
-    `<h1> Name  </h1>`  // wie muss der Pfad heißen??
-    );
+
+
+
+layer.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+
 
 /*
 //eigenes layer für jedes Bundesland erstellen
