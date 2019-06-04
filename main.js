@@ -96,11 +96,76 @@ new L.Control.MiniMap(
 
 
 
-//L.geoJSON(natura2000).addTo(karte);  
+const bundesländer = L.featureGroup();
+
+var alle = L.geoJson(natura2000);
+//Burgenland
+var Burgenland = L.geoJson(natura2000, {
+            filter: function(feature, layer) {
+            return feature.properties.BUNDESLAND == "Burgenland";
+        }
+}).addTo(karte);
+//Kärnten
+var Kaernten = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Kaernten";
+}
+}).addTo(karte);
+//Niederösterreich
+var Niederoesterreich = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Niederoesterreich";
+}
+}).addTo(karte);
+
+//Oberösterreich
+var Oberoesterreich = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Oberoesterreich";
+}
+}).addTo(karte);
+
+//Salzburg
+var Steiermark = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Salzburg";
+}
+}).addTo(karte);
+
+//Steiermark
+var Steiermark = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Steiermark";
+}
+}).addTo(karte);
+
+//Tirol
+var Tirol = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Tirol";
+}
+}).addTo(karte);
+
+//Wien
+var Tirol = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Wien";
+}
+}).addTo(karte);
+
+//Vorarlberg
+var Tirol = L.geoJson(natura2000, {
+    filter: function(feature, layer) {
+    return feature.properties.BUNDESLAND == "Vorarlberg";
+}
+}).addTo(karte);
+
+
+
 
 var layer= L.geoJson(natura2000, {
 }).addTo(karte);
-console.log(L.geoJson(natura2000))
+
 
 
 layer.bindPopup(function(lay){
@@ -112,10 +177,7 @@ layer.bindPopup(function(lay){
     return info;
 });
 
-/*
-layer.bindPopup(
-    `<h1> Name ${layer.feature.properties.NAME}  </h1>`  // wie muss der Pfad heißen??
-    );
+
 
 /*
 //eigenes layer für jedes Bundesland erstellen
