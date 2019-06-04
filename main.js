@@ -96,11 +96,25 @@ new L.Control.MiniMap(
 
 
 
-L.geoJSON(natura2000).addTo(karte);  
+//L.geoJSON(natura2000).addTo(karte);  
+
 var layer= L.geoJson(natura2000, {
 }).addTo(karte);
+console.log(L.geoJson(natura2000))
+
+
+layer.bindPopup(function(lay){
+    const props = lay.feature.properties;
+    const info = `<h1> ${props.NAME}  </h1>
+    <p> Bundesland: ${props.BUNDESLAND} <br>
+    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    return info;
+});
+
+/*
 layer.bindPopup(
-    `<h1> Name  </h1>`  // wie muss der Pfad heißen??
+    `<h1> Name ${layer.feature.properties.NAME}  </h1>`  // wie muss der Pfad heißen??
     );
 
 /*
