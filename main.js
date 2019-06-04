@@ -162,7 +162,7 @@ var Tirol = L.geoJson(natura2000, {
 
 
 
-
+/*
 var layer= L.geoJson(natura2000, {
 }).addTo(karte);
 
