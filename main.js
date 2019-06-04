@@ -247,7 +247,8 @@ function funcBurgenland() {
 };
 
 function funcBurgenland() {
-    karte.removeLayer(bundesländer)
+    
+    karte.removeLayer(bundesländer, Kaernten)
     Burgenland.addTo(karte)
 };
 
@@ -285,6 +286,11 @@ function funcVorarlberg() {
     Vorarlberg.addTo(karte)
 };
 
+
+/* entfernt ALLES:
+karte.eachLayer(function (layer) {
+        karte.removeLayer(layer);
+    });
 
 
 /* Hier werden buttons aktiviert
