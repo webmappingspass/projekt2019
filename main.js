@@ -237,6 +237,7 @@ Vorarlberg.bindPopup(function(lay){
     return info;
 });
 
+
 bundesländer.addTo(karte);
 karte.fitBounds(bundesländer.getBounds());
 
