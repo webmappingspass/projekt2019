@@ -241,6 +241,13 @@ bundesländer.addTo(karte);
 karte.fitBounds(bundesländer.getBounds());
 
 
+/* Hier werden buttons aktiviert
+$("#burgenland").click(function() {
+    map.removeLayer(bundesländer)
+    map.addLayer(burgenland)
+    
+});
+
 /*
 var layer= L.geoJson(natura2000, {
 }).addTo(karte);
