@@ -59,7 +59,7 @@ const layerControl = L.control.layers({
     "Stamen Toner": kartenLayer.stamen_toner,
     "Stamen Terrain": kartenLayer.stamen_terrain,
     "Stamen Watercolor": kartenLayer.stamen_watercolor
-}).addTo(karte);
+}).addTo(karte); //sdfassd
 
 
 
