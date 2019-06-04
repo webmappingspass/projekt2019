@@ -241,6 +241,51 @@ Vorarlberg.bindPopup(function(lay){
 bundesländer.addTo(karte);
 karte.fitBounds(bundesländer.getBounds());
 
+//Funktionen die ausgeführt werden wenn Button gedrückt wird
+function funcBurgenland() {
+    karte.addLayer(bundesländer)
+};
+
+function funcBurgenland() {
+    karte.removeLayer(bundesländer)
+    Burgenland.addTo(karte)
+};
+
+function funcKaernten() {
+    karte.removeLayer(bundesländer)
+    Kaernten.addTo(karte)
+};
+
+function funcNiederoesterreich() {
+    karte.removeLayer(bundesländer)
+    Niederoesterreich.addTo(karte)
+};
+function funcOberoesterreich() {
+    karte.removeLayer(bundesländer)
+    Oberoesterreich.addTo(karte)
+};
+function funcSalzburg() {
+    karte.removeLayer(bundesländer)
+    Salzburg.addTo(karte)
+};
+function funcSteiermark() {
+    karte.removeLayer(bundesländer)
+    Steiermark.addTo(karte)
+};
+function funcTirol() {
+    karte.removeLayer(bundesländer)
+    Tirol.addTo(karte)
+};
+function funcWien() {
+    karte.removeLayer(bundesländer)
+    Wien.addTo(karte)
+};
+function funcVorarlberg() {
+    karte.removeLayer(bundesländer)
+    Vorarlberg.addTo(karte)
+};
+
+
 
 /* Hier werden buttons aktiviert
 $("#burgenland").click(function() {
