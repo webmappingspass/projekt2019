@@ -100,9 +100,10 @@ L.geoJSON(natura2000).addTo(karte);
 var layer= L.geoJson(natura2000, {
 }).addTo(karte);
 layer.bindPopup(
-    `<h1> Name ${properties.NAME} </h1>`  // wie muss der Pfad heißen??
+    `<h1> Name  </h1>`  // wie muss der Pfad heißen??
     );
 
+/*
 //eigenes layer für jedes Bundesland erstellen
 var burgenland = L.featureGroup();
 L.geoJson(natura2000, {
