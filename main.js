@@ -103,7 +103,8 @@ const bundesländer = L.layerGroup();
 var Laender = new Array();
 Laender = {"Burgenland", "Kaernten", "Niederoesterreich", "Oberoesterreich", "Salzburg", "Steiermark", "Tirol", "Wien", "Vorarlberg"};
 for (let i of arrayLaender)  {
-        var i = L.geoJson(natura2000, {
+        var i;
+        i = L.geoJson(natura2000, {
             filter: function(feature, layer) {
             return feature.properties.BUNDESLAND == "i";
         }
@@ -138,7 +139,8 @@ Burgenland.bindPopup(function(lay){
 });
 
 //Kärnten
-var Kaernten = L.geoJson(natura2000, {
+var Kaernten;
+Kaernten = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Kaernten";
 }
@@ -153,7 +155,8 @@ Kaernten.bindPopup(function(lay){
 });
 
 //Niederösterreich
-var Niederoesterreich = L.geoJson(natura2000, {
+var Niederoesterreich;
+Niederoesterreich = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Niederoesterreich";
 }
@@ -168,7 +171,8 @@ Niederoesterreich.bindPopup(function(lay){
 });
 
 //Oberösterreich
-var Oberoesterreich = L.geoJson(natura2000, {
+var Oberoesterreich;
+Oberoesterreich = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Oberoesterreich";
 }
@@ -183,7 +187,8 @@ Oberoesterreich.bindPopup(function(lay){
 });
 
 //Salzburg
-var Salzburg = L.geoJson(natura2000, {
+var Salzburg;
+Salzburg = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Salzburg";
 }
@@ -198,7 +203,8 @@ Salzburg.bindPopup(function(lay){
 });
 
 //Steiermark
-var Steiermark = L.geoJson(natura2000, {
+var Steiermark;
+Steiermark = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Steiermark";
 }
@@ -213,7 +219,8 @@ Steiermark.bindPopup(function(lay){
 });
 
 //Tirol
-var Tirol = L.geoJson(natura2000, {
+var Tirol;
+Tirol = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Tirol";
 }
@@ -267,55 +274,87 @@ karte.fitBounds(bundesländer.getBounds()); // WARUM IST DER ABSTAND SO GROß?
 const tempoLaender = L.layerGroup();
 
 function funcAlle() {
-    karte.removeLayer(Burgenland);
-    //karte.addLayer(bundesländer)
+    if(!karte.hasLayer(bundesländer)){              
+        bundesländer.addTo(karte);
+        }
+    else{
+        karte.removeLayer(bundesländer);
+    }
 };
-
-
 
 function funcBurgenland() {
     if(!karte.hasLayer(Burgenland)){              
     Burgenland.addTo(karte);
-    console.log("1runde"); 
     }
     else{
         karte.removeLayer(Burgenland);
-        console.log("2runde");
     }
 };
 
 function funcKaernten() {
-    bundesländer.clearLayers()
-    Kaernten.addTo(bundesländer)  
+    if(!karte.hasLayer(Kaernten)){              
+        Kaernten.addTo(karte);
+        }
+    else{
+        karte.removeLayer(Kaernten);           
+    }
 };
 
 function funcNiederoesterreich() {
-    karte.removeLayer(bundesländer)
-    Niederoesterreich.addTo(karte)
+    if(!karte.hasLayer(Niederoesterreich)){              
+        Niederoesterreich.addTo(karte);
+        }
+    else{
+        karte.removeLayer(Niederoesterreich);           
+    }
 };
 function funcOberoesterreich() {
-    karte.removeLayer(bundesländer)
-    Oberoesterreich.addTo(karte)
+    if(!karte.hasLayer(Oberoesterreich)){              
+        Oberoesterreich.addTo(karte);
+        }
+    else{
+        karte.removeLayer(Oberoesterreich);           
+    }
 };
 function funcSalzburg() {
-    karte.removeLayer(bundesländer)
-    Salzburg.addTo(karte)
+    if(!karte.hasLayer(Salzburg)){              
+        Salzburg.addTo(karte);
+        }
+    else{
+        karte.removeLayer(Salzburg);           
+    }
 };
 function funcSteiermark() {
-    karte.removeLayer(bundesländer)
-    Steiermark.addTo(karte)
+    if(!karte.hasLayer(Steiermark)){              
+        Steiermark.addTo(karte);
+        }
+    else{
+        karte.removeLayer(Steiermark);           
+    }
 };
 function funcTirol() {
-    karte.removeLayer(bundesländer)
-    Tirol.addTo(karte)
+    if(!karte.hasLayer(Tirol)){              
+        Tirol.addTo(karte);
+        }
+    else{
+        karte.removeLayer(Tirol);           
+    }
 };
 function funcWien() {
-    karte.removeLayer(bundesländer)
-    Wien.addTo(karte)
+    if(!karte.hasLayer(Wien)){              
+        Wien.addTo(karte);
+        }
+    else{
+        karte.removeLayer(Wien);           
+    }
 };
 function funcVorarlberg() {
-    karte.removeLayer(bundesländer)
-    Vorarlberg.addTo(karte)
+    if(!karte.hasLayer(Vorarlberg)){              
+        Vorarlberg.addTo(karte);
+        }
+    else{
+        karte.removeLayer(Vorarlberg);           
+    }
 };
 
 
