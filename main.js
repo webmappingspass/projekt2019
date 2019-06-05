@@ -96,14 +96,34 @@ new L.Control.MiniMap(
 
 
 
-const bundesländer = L.featureGroup();
+const bundesländer = L.layerGroup();
 
 
-var alle = L.geoJson(natura2000);
+/* Versuch Bundesländer mit Array und Schleife abzugreifen
+var Laender = new Array();
+Laender = {"Burgenland", "Kaernten", "Niederoesterreich", "Oberoesterreich", "Salzburg", "Steiermark", "Tirol", "Wien", "Vorarlberg"};
+for (let i of arrayLaender)  {
+        var i = L.geoJson(natura2000, {
+            filter: function(feature, layer) {
+            return feature.properties.BUNDESLAND == "i";
+        }
+        }).addTo(bundesländer);
+        i.bindPopup(function(lay){
+            const props = lay.feature.properties;
+            const info = `<h1> ${props.NAME}  </h1>
+            <p> Bundesland: ${props.BUNDESLAND} <br>
+            Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+            Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+            return info;
+};
+*/
+
+
 
 //Für jedes Bundesland wird eigene Variable und entsprechende Popups erstellt
 //Burgenland
-var Burgenland = L.geoJson(natura2000, {
+var Burgenland;
+Burgenland = L.geoJson(natura2000, {
             filter: function(feature, layer) {
             return feature.properties.BUNDESLAND == "Burgenland";
         }
@@ -208,7 +228,8 @@ Tirol.bindPopup(function(lay){
 });
 
 //Wien
-var Wien = L.geoJson(natura2000, {
+var Wien;
+Wien = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Wien";
 }
@@ -223,7 +244,8 @@ Wien.bindPopup(function(lay){
 });
 
 //Vorarlberg
-var Vorarlberg = L.geoJson(natura2000, {
+var Vorarlberg;
+Vorarlberg = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Vorarlberg";
 }
@@ -239,22 +261,32 @@ Vorarlberg.bindPopup(function(lay){
 
 
 bundesländer.addTo(karte);
-karte.fitBounds(bundesländer.getBounds());
+karte.fitBounds(bundesländer.getBounds()); // WARUM IST DER ABSTAND SO GROß?
 
 //Funktionen die ausgeführt werden wenn Button gedrückt wird
-function funcBurgenland() {
-    karte.addLayer(bundesländer)
+const tempoLaender = L.layerGroup();
+
+function funcAlle() {
+    karte.removeLayer(Burgenland);
+    //karte.addLayer(bundesländer)
 };
 
+
+
 function funcBurgenland() {
-    clearLayers()
-    karte.removeLayer(Kaernten) //Kaernten ist kein Layer??
-    Burgenland.addTo(karte)
+    if(!karte.hasLayer(Burgenland)){              
+    Burgenland.addTo(karte);
+    console.log("1runde"); 
+    }
+    else{
+        karte.removeLayer(Burgenland);
+        console.log("2runde");
+    }
 };
 
 function funcKaernten() {
-    karte.removeLayer(bundesländer)
-    Kaernten.addTo(karte)
+    bundesländer.clearLayers()
+    Kaernten.addTo(bundesländer)  
 };
 
 function funcNiederoesterreich() {
@@ -287,77 +319,9 @@ function funcVorarlberg() {
 };
 
 
-/* entfernt ALLES:
+/* 
+entfernt ALLES:
 karte.eachLayer(function (layer) {
         karte.removeLayer(layer);
     });
-
-
-/* Hier werden buttons aktiviert
-$("#burgenland").click(function() {
-    map.removeLayer(bundesländer)
-    map.addLayer(burgenland)
-    
-});
-
-/*
-var layer= L.geoJson(natura2000, {
-}).addTo(karte);
-
-
-
-layer.bindPopup(function(lay){
-    const props = lay.feature.properties;
-    const info = `<h1> ${props.NAME}  </h1>
-    <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
-    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
-    return info;
-});
-
-
-
-/*
-//eigenes layer für jedes Bundesland erstellen
-var burgenland = L.featureGroup();
-L.geoJson(natura2000, {
-    if(properties.NAME= "Burgenland")
-    }).addTo(burgenland);
-burgenland.addTo(karte)
-/*
-burgenland.bindPopup(
-    `<h1> Name ${properties.NAME} </h1>`  // wie muss der Pfad heißen??
-    );
-/*
-
-
-/* Beispiel um Gebiete Anhand von Eigenschaften einzufärben
-L.geoJSON(grenzen, {
-    style: function(features) {
-        switch (features.id) {
-            case 'RNA_NATIONALPARK.80a0a831-a0c0-4439-8f80-904c08c7': return {color: "#ff0000"};
-            case 'Democrat':   return {color: "#0000ff"};
-        }
-    }
-}).addTo(karte);
-/*
-
-/*
-//Versuch Punkte aus gebiete.js zu lesen
-for (let sight of TAUERN){
-    let piktogramm = L.icon({
-        iconUrl: `icons/1.png`,
-        iconSize : 40,
-    });
-    sightpin = L.marker(
-        [sight.geometry.coordinates[0], sight.geometry.coordinates[1]], {
-            icon:piktogramm
-        }
-    ).addTo(karte) 
-
-    sightpin.bindPopup(
-        `<p><b> ${sight.NAME}</b><p>`
-    );
-    }
-
-    */
+*/
