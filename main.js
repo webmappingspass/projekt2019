@@ -59,7 +59,7 @@ const layerControl = L.control.layers({
     "Stamen Toner": kartenLayer.stamen_toner,
     "Stamen Terrain": kartenLayer.stamen_terrain,
     "Stamen Watercolor": kartenLayer.stamen_watercolor
-}).addTo(karte); //sdfassd
+}).addTo(karte); 
 
 
 
@@ -69,18 +69,23 @@ kartenLayer.bmapgrau.addTo(karte);
 //Implementierung Fullscreen Plugin
 karte.addControl(new L.Control.Fullscreen());
 
-//setzt karte auf aktuelle Geolocation
-//Hier Problem, dass KArte immer wieder auf diese Position zurückspringt-> Lösung suchen
-/*
+
+
+//Setzt Startposition ##############Warum brauch ich das
+karte.setView([47.248, 13.820], 6);
+
+
+//Plugin setzt Karte auf aktuelle GeoPosition, falls Ortung aktiviert
 karte.locate({
     setView: true,
-    maxZoom: 16,
+    maxZoom: 8,
     watch: true,
 });
-*/
 
-//Setzt Startposition
-karte.setView([47.25, 11.416667], 4);
+
+
+
+
 
 // Implementierung Minimap
 new L.Control.MiniMap(
@@ -96,10 +101,12 @@ new L.Control.MiniMap(
 
 
 
+
+
 const bundesländer = L.layerGroup();
 
 
-/* Versuch Bundesländer mit Array und Schleife abzugreifen
+/* Versuch Bundesländer mit Array und Schleife abzugreifen ########################################
 var Laender = new Array();
 Laender = {"Burgenland", "Kaernten", "Niederoesterreich", "Oberoesterreich", "Salzburg", "Steiermark", "Tirol", "Wien", "Vorarlberg"};
 for (let i of arrayLaender)  {
@@ -268,11 +275,9 @@ Vorarlberg.bindPopup(function(lay){
 
 
 bundesländer.addTo(karte);
-karte.fitBounds(bundesländer.getBounds()); // WARUM IST DER ABSTAND SO GROß?
+karte.fitBounds(bundesländer.getBounds()); // WARUM GEHT DAS NICHT ?###################################
 
 //Funktionen die ausgeführt werden wenn Button gedrückt wird
-const tempoLaender = L.layerGroup();
-
 function funcAlle() {
     if(!karte.hasLayer(bundesländer)){              
         bundesländer.addTo(karte);
@@ -358,9 +363,17 @@ function funcVorarlberg() {
 };
 
 
-/* 
-entfernt ALLES:
-karte.eachLayer(function (layer) {
-        karte.removeLayer(layer);
-    });
-*/
+//Suchfunktion ########################### geht nicht
+var searchCtrl = L.control.fuseSearch()
+searchCtrl.addTo(karte);
+
+searchCtrl.indexFeatures(bundesländer, ['NAME', 'Bundesland', 'flaeche']);
+
+
+
+//Easy  Button ############### Geht nicht
+L.easyButton('fas fa-map-marked-alt', function(){
+   alert("Kartenzentrum: " + map.getCenter().toString())
+}).addTo(karte);
+
+
