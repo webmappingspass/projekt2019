@@ -18,13 +18,6 @@
     <!--Plugin Location Share-->
     <script src="plugins/Leaflet.LocationShare.js"></script>
 
-    <!--Zoomslider-->
-    <script src="plugins/L.Control.Zoomslider.js"></script>
-    <link href="plugins/L.Control.Zoomslider.css" rel="stylesheet" />
-
-    <!--Easy Button PlugIn-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
-    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 
     <!--Search Plugin-->      
     <script src="plugins/fuse.js"></script>
@@ -32,6 +25,8 @@
     <!--Font Awesome--> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     
 
     <!-- Geolocation Plugin -->
@@ -101,16 +96,16 @@
         <h3>Karte1</h3>
 
         <div class="btn-group">
-            <button type="button" id="all" class="btn btn-primary" onclick="funcAlle()"  >Alle</button>
-            <button type="button" id="burgenland" class="btn btn-primary" onclick="funcBurgenland()" >Burgenland</button>
-            <button type="button" id="kaernten" class="btn btn-danger" onclick="funcKaernten()">Kärnten</button>
-            <button type="button" id="oberoesterreich" class="btn btn-danger" onclick="funcOberoesterreich()">Oberösterreich</button>
-            <button type="button" id="niederoesterreich" class="btn btn-danger" onclick="funcNiederoesterreich()">Niederösterreich</button>
-            <button type="button" id="steiermark" class="btn btn-danger" onclick="funcSteiermark()">Steiermark</button>
-            <button type="button" id="salzburg" class="btn btn-danger" onclick="funcSalzburg()">Salzburg</button>
-            <button type="button" id="tirol" class="btn btn-danger" onclick="funcTirol()">Tirol</button>
-            <button type="button" id="wien" class="btn btn-danger" onclick="funcWien()">Wien</button>
-            <button type="button" id="vorarlberg" class="btn btn-danger" onclick="funcVorarlberg()">Vorarlberg</button>
+            <button type="button" id="all" class="btn" onclick="funcAlle()"  >Alle</button>
+            <button type="button" id="burgenland" class="btn" onclick="funcBurgenland()" >Burgenland</button>
+            <button type="button" id="kaernten" class="btn" onclick="funcKaernten()">Kärnten</button>
+            <button type="button" id="oberoesterreich" class="btn" onclick="funcOberoesterreich()">Oberösterreich</button>
+            <button type="button" id="niederoesterreich" class="btn" onclick="funcNiederoesterreich()">Niederösterreich</button>
+            <button type="button" id="steiermark" class="btn" onclick="funcSteiermark()">Steiermark</button>
+            <button type="button" id="salzburg" class="btn" onclick="funcSalzburg()">Salzburg</button>
+            <button type="button" id="tirol" class="btn" onclick="funcTirol()">Tirol</button>
+            <button type="button" id="wien" class="btn" onclick="funcWien()">Wien</button>
+            <button type="button" id="vorarlberg" class="btn" onclick="funcVorarlberg()">Vorarlberg</button>
         </div>
         <div id="map"></div>
 

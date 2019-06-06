@@ -127,20 +127,27 @@ for (let i of arrayLaender)  {
 */
 
 
-
 //Für jedes Bundesland wird eigene Variable und entsprechende Popups erstellt
 //Burgenland
+var myStyle = {
+    "color": "white",
+    "weight": 5,
+    "opacity": 0.65};
+
+
 var Burgenland;
 Burgenland = L.geoJson(natura2000, {
+            
             filter: function(feature, layer) {
             return feature.properties.BUNDESLAND == "Burgenland";
+            style: myStyle
         }
 }).addTo(bundesländer);
 Burgenland.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
     Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
@@ -156,7 +163,7 @@ Kaernten.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
     Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
@@ -172,7 +179,7 @@ Niederoesterreich.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
     Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
@@ -188,7 +195,7 @@ Oberoesterreich.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
     Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
@@ -204,7 +211,7 @@ Salzburg.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
     Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
@@ -220,7 +227,7 @@ Steiermark.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
     Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
@@ -236,7 +243,7 @@ Tirol.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
     Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
@@ -252,7 +259,7 @@ Wien.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
     Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
@@ -268,7 +275,7 @@ Vorarlberg.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
-    Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
+    Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
     Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
@@ -370,10 +377,5 @@ searchCtrl.addTo(karte);
 searchCtrl.indexFeatures(bundesländer, ['NAME', 'Bundesland', 'flaeche']);
 
 
-
-//Easy  Button ############### Geht nicht
-L.easyButton('fas fa-map-marked-alt', function(){
-   alert("Kartenzentrum: " + map.getCenter().toString())
-}).addTo(karte);
 
 
