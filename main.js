@@ -114,7 +114,8 @@ for (let i of arrayLaender)  {
         i = L.geoJson(natura2000, {
             filter: function(feature, layer) {
             return feature.properties.BUNDESLAND == "i";
-        }
+        },
+        style=myStyle
         }).addTo(bundesländer);
         i.bindPopup(function(lay){
             const props = lay.feature.properties;
@@ -127,21 +128,25 @@ for (let i of arrayLaender)  {
 */
 
 
+//Style Optionen für die Polygone
+var myStyle = {
+    fillColor: '#4CAF50',
+    fillOpacity: 0.6,
+    weight: 1,
+    color: 'green',
+    opacity: 1,   
+};
+
 //Für jedes Bundesland wird eigene Variable und entsprechende Popups erstellt
 //Burgenland
-var myStyle = {
-    "color": "white",
-    "weight": 5,
-    "opacity": 0.65};
-
-
 var Burgenland;
 Burgenland = L.geoJson(natura2000, {
             
             filter: function(feature, layer) {
             return feature.properties.BUNDESLAND == "Burgenland";
-            style: myStyle
-        }
+            
+        },
+        style: myStyle
 }).addTo(bundesländer);
 Burgenland.bindPopup(function(lay){
     const props = lay.feature.properties;
@@ -157,7 +162,8 @@ var Kaernten;
 Kaernten = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Kaernten";
-}
+},
+style: myStyle
 }).addTo(bundesländer);
 Kaernten.bindPopup(function(lay){
     const props = lay.feature.properties;
@@ -173,7 +179,8 @@ var Niederoesterreich;
 Niederoesterreich = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Niederoesterreich";
-}
+},
+style: myStyle
 }).addTo(bundesländer);
 Niederoesterreich.bindPopup(function(lay){
     const props = lay.feature.properties;
@@ -189,7 +196,8 @@ var Oberoesterreich;
 Oberoesterreich = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Oberoesterreich";
-}
+},
+style: myStyle
 }).addTo(bundesländer);
 Oberoesterreich.bindPopup(function(lay){
     const props = lay.feature.properties;
@@ -205,7 +213,8 @@ var Salzburg;
 Salzburg = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Salzburg";
-}
+},
+style: myStyle
 }).addTo(bundesländer);
 Salzburg.bindPopup(function(lay){
     const props = lay.feature.properties;
@@ -221,7 +230,8 @@ var Steiermark;
 Steiermark = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Steiermark";
-}
+},
+style: myStyle
 }).addTo(bundesländer);
 Steiermark.bindPopup(function(lay){
     const props = lay.feature.properties;
@@ -237,7 +247,8 @@ var Tirol;
 Tirol = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Tirol";
-}
+},
+style: myStyle
 }).addTo(bundesländer);
 Tirol.bindPopup(function(lay){
     const props = lay.feature.properties;
@@ -253,7 +264,8 @@ var Wien;
 Wien = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Wien";
-}
+},
+style: myStyle
 }).addTo(bundesländer);
 Wien.bindPopup(function(lay){
     const props = lay.feature.properties;
@@ -269,7 +281,8 @@ var Vorarlberg;
 Vorarlberg = L.geoJson(natura2000, {
     filter: function(feature, layer) {
     return feature.properties.BUNDESLAND == "Vorarlberg";
-}
+},
+style: myStyle
 }).addTo(bundesländer);
 Vorarlberg.bindPopup(function(lay){
     const props = lay.feature.properties;
