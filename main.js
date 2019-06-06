@@ -87,7 +87,7 @@ karte.locate({
 
 
 
-// Implementierung Minimap
+// Minimap
 new L.Control.MiniMap(
     L.tileLayer("https://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
         subdomains: ["maps", "maps1", "maps2", "maps3", "maps4"],
@@ -391,4 +391,9 @@ searchCtrl.indexFeatures(bundesländer, ['NAME', 'Bundesland', 'flaeche']);
 
 
 
-
+/*
+-Zeilenumbruch bei den Links im Popup
+-Suchplugin funktioniert noch nicht (Zeiel 387)
+-Kartenbounds funktioniert noch nicht (Zeile 298)
+-Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
+*/
