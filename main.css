@@ -58,12 +58,15 @@ main figure img {
     border: 1px solid black;
 }
 
-.gallerie {
-    float: left;
-}
+.infobox{
+    margin: 3em;
+    background-color: #4CAF50; 
+    padding: 0.5em 1.3em 0.5em 1.3em;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    width: 80%;
+    color: white;
 
-.tabelle {
-    float: right;
 }
 
 
