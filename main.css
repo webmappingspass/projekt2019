@@ -30,7 +30,7 @@ header h4 {
 
 
 main {
-    width: 100%;
+    width: 95%;
     margin-left: 1em
     
 }
@@ -53,7 +53,7 @@ main figure img {
 }
 
 #map {
-    height: 460px;
+    height: 800px;
     width: 95%;
     border: 1px solid black;
 }
@@ -123,7 +123,7 @@ background-color:green;
     text-decoration: none;
     float: left;
     display: inline-block;
-    font-size: 12px;
+    font-size: 20px;
     -webkit-transition-duration: 0.1s; 
     transition-duration: 0.1s;
   }
