@@ -397,4 +397,5 @@ searchCtrl.indexFeatures(bundesländer, ['NAME', 'Bundesland', 'flaeche']);
 -Suchplugin funktioniert noch nicht (Zeiel 387)
 -Kartenbounds funktioniert noch nicht (Zeile 298)
 -Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
+-Webmapping.io (webmappingspass.github.io bzw https://webmappingspass.github.io/index.html bzw https://larstimo.github.io/aws-tirol/index.html)
 */
