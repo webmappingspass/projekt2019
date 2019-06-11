@@ -400,5 +400,4 @@ var hash = new L.Hash(karte);
 -Kartenbounds funktioniert noch nicht (Zeile 298)
 -Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
 -Webmapping.io (webmappingspass.github.io bzw https://webmappingspass.github.io/index.html bzw https://larstimo.github.io/aws-tirol/index.html)
-
 */
