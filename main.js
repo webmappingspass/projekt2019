@@ -397,7 +397,6 @@ var hash = new L.Hash(karte);
 
 /*
 -Zeilenumbruch bei den Links im Popup
--Kartenbounds funktioniert noch nicht (Zeile 298)
--Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
+--Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
 -Webmapping.io (webmappingspass.github.io bzw https://webmappingspass.github.io/index.html bzw https://larstimo.github.io/aws-tirol/index.html)
 */
