@@ -152,7 +152,7 @@ Burgenland.bindPopup(function(lay){
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
     Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
-    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    Info:   <a href= "${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }">Link </a>  `
     return info;
 });
 
@@ -254,9 +254,11 @@ Tirol.bindPopup(function(lay){
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
     Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
-    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    Info:   <a href= "${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }">Link </a>  `
     return info;
 });
+
+
 
 //Wien
 var Wien;
@@ -271,7 +273,7 @@ Wien.bindPopup(function(lay){
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
     Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
-    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    Info:  ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
 
