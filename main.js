@@ -106,15 +106,23 @@ new L.Control.MiniMap(
 
 const bundesländer = L.layerGroup();
 
+ArrayList<String> laender = new ArrayList <String>();
+laender.add("Burgenland");
+for (int i = 0;i<laender.size();i++){
+    console.log(laender.get(i));
+}
+
 
 /* Versuch Bundesländer mit Array und Schleife abzugreifen ########################################
-var Laender = new Array();
-Laender = {"Burgenland", "Kaernten", "Niederoesterreich", "Oberoesterreich", "Salzburg", "Steiermark", "Tirol", "Wien", "Vorarlberg"};
-for (let i of arrayLaender)  {
-        var i;
-        i = L.geoJson(natura2000, {
+  ArrayList<String> laender = new ArrayList <String>();
+laender.add("Burgenland");
+laender.add("Kaernten");
+for (int i = 0;i<laender.size();i++){
+        console.log(laender.get(i));
+        var "laender.get(i)";
+        laender.get(i) = L.geoJson(natura2000, {
             filter: function(feature, layer) {
-            return feature.properties.BUNDESLAND == "i";
+            return feature.properties.BUNDESLAND == "laender.get(i)";
         },
         style=myStyle
         }).addTo(bundesländer);
