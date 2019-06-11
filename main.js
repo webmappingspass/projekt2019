@@ -82,10 +82,10 @@ new L.Control.MiniMap(
     }
 ).addTo(karte);
 
-//definiert LayerGroup zu der später alle Bundesländer hinzugefügt werden
-const bundesländer = L.layerGroup();
+//definiert LayerGroup zu der später alle bundeslaender hinzugefügt werden
+const bundeslaender = L.layerGroup();
 
-/* Versuch Bundesländer mit Array und Schleife abzugreifen ########################################
+/* Versuch bundeslaender mit Array und Schleife abzugreifen ########################################
   ArrayList<String> laender = new ArrayList <String>();
 laender.add("Burgenland");
 laender.add("Kaernten");
@@ -97,7 +97,7 @@ for (int i = 0;i<laender.size();i++){
             return feature.properties.BUNDESLAND == "laender.get(i)";
         },
         style=myStyle
-        }).addTo(bundesländer);
+        }).addTo(bundeslaender);
         i.bindPopup(function(lay){
             const props = lay.feature.properties;
             const info = `<h1> ${props.NAME}  </h1>
@@ -127,7 +127,7 @@ Burgenland = L.geoJson(natura2000, {
             
         },
         style: myStyle
-}).addTo(bundesländer);
+}).addTo(bundeslaender);
 Burgenland.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
@@ -144,7 +144,7 @@ Kaernten = L.geoJson(natura2000, {
     return feature.properties.BUNDESLAND == "Kaernten";
 },
 style: myStyle
-}).addTo(bundesländer);
+}).addTo(bundeslaender);
 Kaernten.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
@@ -161,7 +161,7 @@ Niederoesterreich = L.geoJson(natura2000, {
     return feature.properties.BUNDESLAND == "Niederoesterreich";
 },
 style: myStyle
-}).addTo(bundesländer);
+}).addTo(bundeslaender);
 Niederoesterreich.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
@@ -178,7 +178,7 @@ Oberoesterreich = L.geoJson(natura2000, {
     return feature.properties.BUNDESLAND == "Oberoesterreich";
 },
 style: myStyle
-}).addTo(bundesländer);
+}).addTo(bundeslaender);
 Oberoesterreich.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
@@ -195,7 +195,7 @@ Salzburg = L.geoJson(natura2000, {
     return feature.properties.BUNDESLAND == "Salzburg";
 },
 style: myStyle
-}).addTo(bundesländer);
+}).addTo(bundeslaender);
 Salzburg.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
@@ -212,7 +212,7 @@ Steiermark = L.geoJson(natura2000, {
     return feature.properties.BUNDESLAND == "Steiermark";
 },
 style: myStyle
-}).addTo(bundesländer);
+}).addTo(bundeslaender);
 Steiermark.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
@@ -229,7 +229,7 @@ Tirol = L.geoJson(natura2000, {
     return feature.properties.BUNDESLAND == "Tirol";
 },
 style: myStyle
-}).addTo(bundesländer);
+}).addTo(bundeslaender);
 Tirol.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
@@ -246,7 +246,7 @@ Wien = L.geoJson(natura2000, {
     return feature.properties.BUNDESLAND == "Wien";
 },
 style: myStyle
-}).addTo(bundesländer);
+}).addTo(bundeslaender);
 Wien.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
@@ -263,7 +263,7 @@ Vorarlberg = L.geoJson(natura2000, {
     return feature.properties.BUNDESLAND == "Vorarlberg";
 },
 style: myStyle
-}).addTo(bundesländer);
+}).addTo(bundeslaender);
 Vorarlberg.bindPopup(function(lay){
     const props = lay.feature.properties;
     const info = `<h1> ${props.NAME}  </h1>
@@ -273,9 +273,9 @@ Vorarlberg.bindPopup(function(lay){
     return info;
 });
 
-//Setzt Kartenausschnitt auf bundesländer layerGroup
-bundesländer.addTo(karte);
-karte.fitBounds(bundesländer.getBounds()); 
+//Setzt Kartenausschnitt auf bundeslaender layerGroup
+bundeslaender.addTo(karte);
+karte.fitBounds(bundeslaender.getBounds()); 
 
 //Plugin setzt Karte auf aktuelle GeoPosition, falls Ortung aktiviert
 karte.locate({
@@ -286,11 +286,11 @@ karte.locate({
 
 //Funktionen die ausgeführt werden wenn Button gedrückt wird
 function funcAlle() {
-    if(!karte.hasLayer(bundesländer)){              
-        bundesländer.addTo(karte);
+    if(!karte.hasLayer(bundeslaender)){              
+        bundeslaender.addTo(karte);
         }
     else{
-        karte.removeLayer(bundesländer);
+        karte.removeLayer(bundeslaender);
     }
 };
 
@@ -371,7 +371,7 @@ function funcVorarlberg() {
 
 //Suchfeld
     const suchFeld = new L.Control.Search({
-    layer: bundesländer,
+    layer: bundeslaender,
     propertyName: "NAME",
     zoom: 10,
     initial: false,
