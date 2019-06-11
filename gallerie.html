@@ -11,29 +11,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    
+
     <!--Referenz zu Geojeson/Naturschutzgebiete-->
     <script src="gebiete.js"></script>
 
-    <!-- Fullscreen Plugin -->
-    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
-        rel='stylesheet' />
-
-    <!-- Hash Plugin -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js'></script>
-    <link href="plugins/Control.Coordinates.css" rel="stylesheet">
-    <script src="plugins/Control.Coordinates.js"></script>
-
-
-    <!-- MiniMap Plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.css"
-        rel="stylesheet" />
-
-     <!-- leaflet-elevation Plugin -->
-    <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation@latest/leaflet-elevation.css" />
-    <script src="https://unpkg.com/@raruto/leaflet-elevation@latest/leaflet-elevation.js"></script>
 
     <!--Referenz zu Javascript/ Karte-->
     <script defer src="main.js"></script>
@@ -43,126 +24,190 @@
 
 <body>
 
-        <ul>
-                <header>
-                        <h3>Bildergalerie</h3>
-                    </header>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="#map">Zur Übersichtskarte</a></a></li>
-            <li><a href="gallerie.html">Zur Bildergalerie</a></li>
-            <li><a href="tabelle.html">Zur Überischtstabelle</a></li>                        
-        </ul>            
-    <main> 
+    <ul>
+        <header>
+            <h3>Bildergalerie</h3>
+        </header>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="#map">Zur Übersichtskarte</a></a></li>
+        <li><a href="gallerie.html">Zur Bildergalerie</a></li>
+        <li><a href="tabelle.html">Zur Überischtstabelle</a></li>
+    </ul>
+    <main>
         <hr />
-       
+
         <style>
             div.gallery {
-              border: 1px solid #ccc;
+                border: 1px solid #ccc;
             }
-            
+
             div.gallery:hover {
-              border: 1px solid #777;
+                border: 1px solid #777;
             }
-            
+
             div.gallery img {
-              width: 100%;
-              height: auto;
-            }
-            
-            div.desc {
-              padding: 15px;
-              text-align: center;
-            }
-            
-            * {
-              box-sizing: border-box;
-            }
-            
-            .responsive {
-              padding: 0 6px;
-              float: left;
-              width: 24.99999%;
-            }
-            
-            @media only screen and (max-width: 700px) {
-              .responsive {
-                width: 49.99999%;
-                margin: 6px 0;
-              }
-            }
-            
-            @media only screen and (max-width: 500px) {
-              .responsive {
                 width: 100%;
-              }
+                height: auto;
             }
-            
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+            }
+
+            @media only screen and (max-width: 700px) {
+                .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+                .responsive {
+                    width: 100%;
+                }
+            }
+
             .clearfix:after {
-              content: "";
-              display: table;
-              clear: both;
+                content: "";
+                display: table;
+                clear: both;
             }
-            </style>
-        <h2>Natura 2000-Gebiete - Wo Europa am schönsten ist</h2>
+        </style>
+        <h1>Natura 2000-Gebiete - Wo Europa am schönsten ist</h1>
         <h4>Eine Auswahl aus der Vielfalt der österreichischen Ökosysteme</h4>
-        
+
         <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/lalidererwand.jpg">
-              <img src="images/lalidererwand.jpg" alt="Laliderer Wand" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+            <div class="gallery">
+                <a target="_blank" href="images/lalidererwand.jpg">
+                    <img src="images/lalidererwand.jpg" alt="Laliderer Wand" width="600" height="600">
+                </a>
+                <div class="desc">Laliderer Wand, Karwendel (Tirol)</div>
+            </div>
         </div>
-        
-        
+
+
         <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/altausseenarzissenwiese.jpg">
-              <img src="images/altausseenarzissenwiese.jpg" alt="Altaussee" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+            <div class="gallery">
+                <a target="_blank" href="images/altausseenarzissenwiese.jpg">
+                    <img src="images/altausseenarzissenwiese.jpg" alt="Altaussee" width="600" height="400">
+                </a>
+                <div class="desc">Narzissenwiese Altaussee (Oberösterreich)</div>
+            </div>
         </div>
-        
+
         <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="img_lights.jpg">
-              <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+            <div class="gallery">
+                <a target="_blank" href="images/mondsee.jpg">
+                    <img src="images/mondsee.jpg" alt="Mondsee" width="600" height="400">
+                </a>
+                <div class="desc">Mondsee (Oberösterreich)</div>
+            </div>
         </div>
-        
+
         <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="img_mountains.jpg">
-              <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+            <div class="gallery">
+                <a target="_blank" href="images/lainzertiergarten.jpg/">
+                    <img src="images/lainzertiergarten.jpg" alt="Lainzertiergarten" width="600" height="400">
+                </a>
+                <div class="desc">Lainzer Tiergarten (Wien)</div>
+            </div>
         </div>
-        
+
+        <br>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/verwall.jpg">
+                    <img src="images/verwall.jpg" alt="Verwall" width="600" height="400">
+                </a>
+                <div class="desc">Verwall (Tirol/Vorarlberg)</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/neusiedlersee.jpg">
+                    <img src="images/neusiedlersee.jpg" alt="Neusiedlersee" width="600" height="400">
+                </a>
+                <div class="desc">Neusiedler See (Burgenland)</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/drau.jpg">
+                    <img src="images/drau.jpg" alt="Drau" width="600" height="400">
+                </a>
+                <div class="desc">Drautal bei Ruden (Kärnten)</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/wachau.JPG">
+                    <img src="images/wachau.JPG" alt="Wachau" width="600" height="400">
+                </a>
+                <div class="desc">Wachau (Niederösterreich)</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="images/millstaettersee.JPG">
+                        <img src="images/millstaettersee.JPG" alt="Millstaettersee" width="600" height="400">
+                    </a>
+                    <div class="desc">Millstätter See (Kärnten)</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="images/oetztaleralpen.JPG">
+                            <img src="images/oetztaleralpen.JPG" alt="Oetztaleralpen" width="600" height="400">
+                        </a>
+                        <div class="desc">Ötztaler Alpen (Tirol)</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="images/raabklamm.JPG">
+                                <img src="images/raabklamm.JPG" alt="Raabklamm" width="600" height="400">
+                            </a>
+                            <div class="desc">Raabklamm (Steiermark)</div>
+                        </div>
+                    </div>
+
         <div class="clearfix"></div>
-        
+
         <div style="padding:6px;">
-          <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-          <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+            <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger
+                than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two
+                images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+            <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
         </div>
-    
-        <h1>Überschrift 1</h1>
-        <p>Hier Gallerie
-        </p>        
 
 
 
-       
+
+
     </main>
 
     <hr />
 
     <footer>
-            
+
 
     </footer>
 
