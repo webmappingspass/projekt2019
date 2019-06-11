@@ -383,13 +383,13 @@ function funcVorarlberg() {
 
 
 //Suchfeld
-    const suchFeldBundesland = new L.Control.Search({
+    const suchFeld = new L.Control.Search({
     layer: bundesländer,
     propertyName: "NAME",
     zoom: 10,
     initial: false,
     });
-    karte.addControl(suchFeldBundesland);
+    karte.addControl(suchFeld);
 
 //Hash-Url
 var hash = new L.Hash(karte);
