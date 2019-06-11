@@ -1,4 +1,3 @@
-//neu
 let karte = L.map("map");
 
 const kartenLayer = {
@@ -48,6 +47,7 @@ const kartenLayer = {
     })
 };
 
+//Auswahl für die Karten
 const layerControl = L.control.layers({
     "Geoland Basemap": kartenLayer.geolandbasemap,
     "Geoland Basemap Grau": kartenLayer.bmapgrau,
@@ -62,31 +62,14 @@ const layerControl = L.control.layers({
     "Stamen Watercolor": kartenLayer.stamen_watercolor
 }).addTo(karte); 
 
-
-
 //Fügt bmapgrau als Startkarte hinzu
 kartenLayer.bmapgrau.addTo(karte);
 
 //Implementierung Fullscreen Plugin
 karte.addControl(new L.Control.Fullscreen());
 
-
-
-//Setzt Startposition ##############Warum brauch ich das
+//Setzt Startposition
 karte.setView([47.248, 13.820], 2);
-
-
-//Plugin setzt Karte auf aktuelle GeoPosition, falls Ortung aktiviert
-karte.locate({
-    setView: true,
-    maxZoom: 8,
-    watch: true,
-});
-
-
-
-
-
 
 // Minimap
 new L.Control.MiniMap(
@@ -99,9 +82,8 @@ new L.Control.MiniMap(
     }
 ).addTo(karte);
 
-
-
-const bundesländer = L.featureGroup();
+//definiert LayerGroup zu der später alle Bundesländer hinzugefügt werden
+const bundesländer = L.layerGroup();
 
 /* Versuch Bundesländer mit Array und Schleife abzugreifen ########################################
   ArrayList<String> laender = new ArrayList <String>();
@@ -125,7 +107,6 @@ for (int i = 0;i<laender.size();i++){
             return info;
 };
 */
-
 
 //Style Optionen für die Polygone
 var myStyle = {
@@ -258,8 +239,6 @@ Tirol.bindPopup(function(lay){
     return info;
 });
 
-
-
 //Wien
 var Wien;
 Wien = L.geoJson(natura2000, {
@@ -294,9 +273,16 @@ Vorarlberg.bindPopup(function(lay){
     return info;
 });
 
-
+//Setzt Kartenausschnitt auf bundesländer layerGroup
 bundesländer.addTo(karte);
 karte.fitBounds(bundesländer.getBounds()); // WARUM GEHT DAS NICHT ?###################################
+
+//Plugin setzt Karte auf aktuelle GeoPosition, falls Ortung aktiviert
+karte.locate({
+    setView: true,
+    maxZoom: 8,
+    watch: true,
+});
 
 //Funktionen die ausgeführt werden wenn Button gedrückt wird
 function funcAlle() {
@@ -383,7 +369,6 @@ function funcVorarlberg() {
     }
 };
 
-
 //Suchfeld
     const suchFeld = new L.Control.Search({
     layer: bundesländer,
@@ -398,7 +383,5 @@ var hash = new L.Hash(karte);
 
 
 /*
-
 --Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
--Webmapping.io (webmappingspass.github.io bzw https://webmappingspass.github.io/index.html bzw https://larstimo.github.io/aws-tirol/index.html)
 */
