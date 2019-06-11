@@ -73,7 +73,7 @@ karte.addControl(new L.Control.Fullscreen());
 
 
 //Setzt Startposition ##############Warum brauch ich das
-karte.setView([47.248, 13.820], 6);
+karte.setView([47.248, 13.820], 2);
 
 
 //Plugin setzt Karte auf aktuelle GeoPosition, falls Ortung aktiviert
@@ -152,7 +152,7 @@ Burgenland.bindPopup(function(lay){
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
     Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
-    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    Info:   <a href= "${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }">Link </a>  `
     return info;
 });
 
@@ -254,9 +254,11 @@ Tirol.bindPopup(function(lay){
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
     Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
-    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    Info:   <a href= "${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }">Link </a>  `
     return info;
 });
+
+
 
 //Wien
 var Wien;
@@ -271,7 +273,7 @@ Wien.bindPopup(function(lay){
     const info = `<h1> ${props.NAME}  </h1>
     <p> Bundesland: ${props.BUNDESLAND} <br>
     Fläche: ${Math.round(props.flaeche/1000000)} Quadratkilometer </p> <br>
-    Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
+    Info:  ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
     return info;
 });
 
@@ -396,8 +398,7 @@ var hash = new L.Hash(karte);
 
 
 /*
--Zeilenumbruch bei den Links im Popup
--Kartenbounds funktioniert noch nicht (Zeile 298)
--Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
+
+--Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
 -Webmapping.io (webmappingspass.github.io bzw https://webmappingspass.github.io/index.html bzw https://larstimo.github.io/aws-tirol/index.html)
 */
