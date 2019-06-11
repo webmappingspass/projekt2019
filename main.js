@@ -73,7 +73,7 @@ karte.addControl(new L.Control.Fullscreen());
 
 
 //Setzt Startposition ##############Warum brauch ich das
-karte.setView([47.248, 13.820], 6);
+karte.setView([47.248, 13.820], 2);
 
 
 //Plugin setzt Karte auf aktuelle GeoPosition, falls Ortung aktiviert
