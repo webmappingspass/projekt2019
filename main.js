@@ -398,7 +398,7 @@ var hash = new L.Hash(karte);
 
 
 /*
--Zeilenumbruch bei den Links im Popup
+
 --Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
 -Webmapping.io (webmappingspass.github.io bzw https://webmappingspass.github.io/index.html bzw https://larstimo.github.io/aws-tirol/index.html)
 */
