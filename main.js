@@ -69,7 +69,7 @@ kartenLayer.bmapgrau.addTo(karte);
 karte.addControl(new L.Control.Fullscreen());
 
 //Setzt Startposition
-karte.setView([47.248, 13.820], 2);
+karte.setView([47.248, 13.820], 6);
 
 // Minimap
 new L.Control.MiniMap(
