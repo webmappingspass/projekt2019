@@ -275,7 +275,7 @@ Vorarlberg.bindPopup(function(lay){
 
 //Setzt Kartenausschnitt auf bundesländer layerGroup
 bundesländer.addTo(karte);
-karte.fitBounds(bundesländer.getBounds()); // WARUM GEHT DAS NICHT ?###################################
+karte.fitBounds(bundesländer.getBounds()); 
 
 //Plugin setzt Karte auf aktuelle GeoPosition, falls Ortung aktiviert
 karte.locate({
