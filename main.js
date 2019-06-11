@@ -101,7 +101,7 @@ new L.Control.MiniMap(
 
 
 
-const bundesländer = L.layerGroup();
+const bundesländer = L.featureGroup();
 
 /* Versuch Bundesländer mit Array und Schleife abzugreifen ########################################
   ArrayList<String> laender = new ArrayList <String>();
@@ -382,17 +382,21 @@ function funcVorarlberg() {
 };
 
 
-//Suchfunktion ########################### geht nicht
-var searchCtrl = L.control.fuseSearch()
-searchCtrl.addTo(karte);
+//Suchfeld
+    const suchFeldBundesland = new L.Control.Search({
+    layer: bundesländer,
+    propertyName: "NAME",
+    zoom: 10,
+    initial: false,
+    });
+    karte.addControl(suchFeldBundesland);
 
-searchCtrl.indexFeatures(bundesländer, ['NAME', 'Bundesland', 'flaeche']);
-
+//Hash-Url
+var hash = new L.Hash(karte);
 
 
 /*
 -Zeilenumbruch bei den Links im Popup
--Suchplugin funktioniert noch nicht (Zeiel 387)
 -Kartenbounds funktioniert noch nicht (Zeile 298)
 -Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
 -Webmapping.io (webmappingspass.github.io bzw https://webmappingspass.github.io/index.html bzw https://larstimo.github.io/aws-tirol/index.html)
