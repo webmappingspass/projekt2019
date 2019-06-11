@@ -101,17 +101,7 @@ new L.Control.MiniMap(
 
 
 
-
-
-
 const bundesländer = L.layerGroup();
-
-ArrayList<String> laender = new ArrayList <String>();
-laender.add("Burgenland");
-for (int i = 0;i<laender.size();i++){
-    console.log(laender.get(i));
-}
-
 
 /* Versuch Bundesländer mit Array und Schleife abzugreifen ########################################
   ArrayList<String> laender = new ArrayList <String>();
@@ -406,4 +396,5 @@ searchCtrl.indexFeatures(bundesländer, ['NAME', 'Bundesland', 'flaeche']);
 -Kartenbounds funktioniert noch nicht (Zeile 298)
 -Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
 -Webmapping.io (webmappingspass.github.io bzw https://webmappingspass.github.io/index.html bzw https://larstimo.github.io/aws-tirol/index.html)
+
 */
