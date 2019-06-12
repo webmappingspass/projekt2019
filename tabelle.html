@@ -10,8 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 
-    
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <!--Referenz zu Geojeson/Naturschutzgebiete-->
     <script src="Natura2000_AT.js"></script>
 
@@ -22,38 +26,3391 @@
 
 <body>
     <header>
-        <h3>Übersichtstabelle der Naturschutzgebiete</h3>
+        <h3>Übersichtstabelle</h3>
     </header>
-
-   
-
-    
-
+    <div id="navleiste"></div>
         <ul>
             <li><a href="index.html">Startseite</a></li>
             <li><a href="index.html#map">Zur Übersichtskarte</a></a></li>
             <li><a href="gallerie.html">Zur Bildergalerie</a></li>
             <li><a href="tabelle.html">Zur Überischtstabelle</a></li>                        
-        </ul>            
-    <main>          
-        
-        <hr />   
-
+        </ul>     
+    </div> 
+    <main>           
         <h1>Überschrift 1</h1>
-        <p>Hier Tabelle
-        </p>        
-
-
-
-       
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <!-- <th onclick="sortTable(0)">ID</th>
+                    <th onclick="sortTable(1)">Name</th>
+                    <th onclick="sortTable(2)">Bundesland</th>
+                    <th onclick="sortTable(3)">Größe[qm]</th> -->
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Bundesland</th>
+                    <th>Größe[qm]</th>
+                    <th>Mehr Info</th>
+                    <th>Schutzstatus</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                
+            </tbody>
+        </table>
     </main>
-
     <hr />
-
-    <footer>
-        
-    </footer>
-
 </body>
-
 </html>
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript">
+    // 1. Get data 
+    var data = [
+        {
+            "id": 1,
+            "name": "Haidel bei Nickelsdorf",
+            "bundesland": "Burgenland",
+            "flaeche": 120985,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000678"
+        },
+        {
+            "id": 2,
+            "name": "Zurndorfer Eichenwald und Hutweide",
+            "bundesland": "Burgenland",
+            "flaeche": 1534213,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000680"
+        },
+        {
+            "id": 3,
+            "name": "Parndorfer Heide",
+            "bundesland": "Burgenland",
+            "flaeche": 73777,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000663"
+        },
+        {
+            "id": 4,
+            "name": "Siegendorfer Pußta und Heide",
+            "bundesland": "Burgenland",
+            "flaeche": 278640,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000677"
+        },
+        {
+            "id": 5,
+            "name": "Lange Leitn Neckenmarkt",
+            "bundesland": "Burgenland",
+            "flaeche": 289452,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000667"
+        },
+        {
+            "id": 6,
+            "name": "Lafnitztal",
+            "bundesland": "Burgenland",
+            "flaeche": 5905550,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000623"
+        },
+        {
+            "id": 7,
+            "name": "Neusiedler See – Nordöstliches Leithagebirge",
+            "bundesland": "Burgenland",
+            "flaeche": 571225271,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+        },
+        {
+            "id": 8,
+            "name": "Südburgenländisches Hügel- und Terrassenland",
+            "bundesland": "Burgenland",
+            "flaeche": 139985616,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000960"
+        },
+        {
+            "id": 9,
+            "name": "Fronwiesen - Johannesbach",
+            "bundesland": "Burgenland",
+            "flaeche": 478876,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000959"
+        },
+        {
+            "id": 10,
+            "name": "Mattersburger Hügelland",
+            "bundesland": "Burgenland",
+            "flaeche": 30608390,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+        },
+        {
+            "id": 11,
+            "name": "Bernstein-Lockenhaus-Rechnitz",
+            "bundesland": "Burgenland",
+            "flaeche": 245859683,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000958"
+        },
+        {
+            "id": 12,
+            "name": "Haidel bei Nickelsdorf",
+            "bundesland": "Burgenland",
+            "flaeche": 120985,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000678"
+        },
+        {
+            "id": 13,
+            "name": "Zurndorfer Eichenwald und Hutweide",
+            "bundesland": "Burgenland",
+            "flaeche": 1534213,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000680"
+        },
+        {
+            "id": 14,
+            "name": "Parndorfer Heide",
+            "bundesland": "Burgenland",
+            "flaeche": 73777,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000663"
+        },
+        {
+            "id": 15,
+            "name": "Siegendorfer Pußta und Heide",
+            "bundesland": "Burgenland",
+            "flaeche": 278640,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000677"
+        },
+        {
+            "id": 16,
+            "name": "Lange Leitn Neckenmarkt",
+            "bundesland": "Burgenland",
+            "flaeche": 289452,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000667"
+        },
+        {
+            "id": 17,
+            "name": "Lafnitztal",
+            "bundesland": "Burgenland",
+            "flaeche": 5905550,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000623"
+        },
+        {
+            "id": 18,
+            "name": "Neusiedler See – Nordöstliches Leithagebirge",
+            "bundesland": "Burgenland",
+            "flaeche": 571225271,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+        },
+        {
+            "id": 19,
+            "name": "Südburgenländisches Hügel- und Terrassenland",
+            "bundesland": "Burgenland",
+            "flaeche": 139985616,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000960"
+        },
+        {
+            "id": 20,
+            "name": "Fronwiesen - Johannesbach",
+            "bundesland": "Burgenland",
+            "flaeche": 478876,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000959"
+        },
+        {
+            "id": 21,
+            "name": "Mattersburger Hügelland",
+            "bundesland": "Burgenland",
+            "flaeche": 30608390,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+        },
+        {
+            "id": 22,
+            "name": "Bernstein-Lockenhaus-Rechnitz",
+            "bundesland": "Burgenland",
+            "flaeche": 245859683,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000958"
+        },
+        {
+            "id": 23,
+            "name": "Haidel bei Nickelsdorf",
+            "bundesland": "Burgenland",
+            "flaeche": 120985,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000678"
+        },
+        {
+            "id": 24,
+            "name": "Zurndorfer Eichenwald und Hutweide",
+            "bundesland": "Burgenland",
+            "flaeche": 1534213,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000680"
+        },
+        {
+            "id": 25,
+            "name": "Parndorfer Heide",
+            "bundesland": "Burgenland",
+            "flaeche": 73777,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000663"
+        },
+        {
+            "id": 26,
+            "name": "Siegendorfer Pußta und Heide",
+            "bundesland": "Burgenland",
+            "flaeche": 278640,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000677"
+        },
+        {
+            "id": 27,
+            "name": "Lange Leitn Neckenmarkt",
+            "bundesland": "Burgenland",
+            "flaeche": 289452,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000667"
+        },
+        {
+            "id": 28,
+            "name": "Lafnitztal",
+            "bundesland": "Burgenland",
+            "flaeche": 5905550,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000623"
+        },
+        {
+            "id": 29,
+            "name": "Neusiedler See – Nordöstliches Leithagebirge",
+            "bundesland": "Burgenland",
+            "flaeche": 571225271,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+        },
+        {
+            "id": 30,
+            "name": "Südburgenländisches Hügel- und Terrassenland",
+            "bundesland": "Burgenland",
+            "flaeche": 139985616,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000960"
+        },
+        {
+            "id": 31,
+            "name": "Fronwiesen - Johannesbach",
+            "bundesland": "Burgenland",
+            "flaeche": 478876,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000959"
+        },
+        {
+            "id": 32,
+            "name": "Mattersburger Hügelland",
+            "bundesland": "Burgenland",
+            "flaeche": 30608390,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+        },
+        {
+            "id": 33,
+            "name": "Bernstein-Lockenhaus-Rechnitz",
+            "bundesland": "Burgenland",
+            "flaeche": 245859683,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000958"
+        },
+        {
+            "id": 1,
+            "name": "Auwiesen - Zickenbachtal",
+            "bundesland": "Burgenland",
+            "flaeche": 409378,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000490"
+        },
+        {
+            "id": 2,
+            "name": "Parndorfer Platte - Heideboden",
+            "bundesland": "Burgenland",
+            "flaeche": 72591155,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": ""
+        },
+        {
+            "id": 3,
+            "name": "Waasen - Hansag",
+            "bundesland": "Burgenland",
+            "flaeche": 30062418,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000679"
+        },
+        {
+            "id": 4,
+            "name": "Neusiedler See – Nordöstliches Leithagebirge",
+            "bundesland": "Burgenland",
+            "flaeche": 571225271,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+        },
+        {
+            "id": 5,
+            "name": "Mattersburger Hügelland",
+            "bundesland": "Burgenland",
+            "flaeche": 30608390,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+        },
+        {
+            "id": 6,
+            "name": "Auwiesen - Zickenbachtal",
+            "bundesland": "Burgenland",
+            "flaeche": 409378,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000490"
+        },
+        {
+            "id": 7,
+            "name": "Parndorfer Platte - Heideboden",
+            "bundesland": "Burgenland",
+            "flaeche": 72591155,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": ""
+        },
+        {
+            "id": 8,
+            "name": "Waasen - Hansag",
+            "bundesland": "Burgenland",
+            "flaeche": 30062418,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000679"
+        },
+        {
+            "id": 9,
+            "name": "Neusiedler See – Nordöstliches Leithagebirge",
+            "bundesland": "Burgenland",
+            "flaeche": 571225271,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+        },
+        {
+            "id": 10,
+            "name": "Mattersburger Hügelland",
+            "bundesland": "Burgenland",
+            "flaeche": 30608390,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+        },
+        {
+            "id": 11,
+            "name": "Auwiesen - Zickenbachtal",
+            "bundesland": "Burgenland",
+            "flaeche": 409378,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000490"
+        },
+        {
+            "id": 12,
+            "name": "Parndorfer Platte - Heideboden",
+            "bundesland": "Burgenland",
+            "flaeche": 72591155,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": ""
+        },
+        {
+            "id": 13,
+            "name": "Waasen - Hansag",
+            "bundesland": "Burgenland",
+            "flaeche": 30062418,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000679"
+        },
+        {
+            "id": 14,
+            "name": "Neusiedler See – Nordöstliches Leithagebirge",
+            "bundesland": "Burgenland",
+            "flaeche": 571225271,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+        },
+        {
+            "id": 15,
+            "name": "Mattersburger Hügelland",
+            "bundesland": "Burgenland",
+            "flaeche": 30608390,
+            "link1": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+            "link2": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+        },
+        {
+            "id": 1,
+            "name": "Wallersee-Wenger Moor",
+            "bundesland": "Salzburg",
+            "flaeche": 2984628,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 2,
+            "name": "Zinkenbach-Karlgraben",
+            "bundesland": "Salzburg",
+            "flaeche": 1004141,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 3,
+            "name": "Winklmoos",
+            "bundesland": "Salzburg",
+            "flaeche": 780773,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 4,
+            "name": "Schwarzbergklamm",
+            "bundesland": "Salzburg",
+            "flaeche": 140735,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 5,
+            "name": "Kalkhochalpen",
+            "bundesland": "Salzburg",
+            "flaeche": 237207819,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 6,
+            "name": "Gerzkopf",
+            "bundesland": "Salzburg",
+            "flaeche": 908265,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 7,
+            "name": "Entrische Kirche",
+            "bundesland": "Salzburg",
+            "flaeche": 63942,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 8,
+            "name": "Überlingmoore",
+            "bundesland": "Salzburg",
+            "flaeche": 384126,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 9,
+            "name": "Rotmoos-Käfertal",
+            "bundesland": "Salzburg",
+            "flaeche": 1687333,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 10,
+            "name": "Untersberg-Vorland",
+            "bundesland": "Salzburg",
+            "flaeche": 1931714,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 11,
+            "name": "Sieben Möser-Gerlosplatte",
+            "bundesland": "Salzburg",
+            "flaeche": 1677178,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 12,
+            "name": "Seetaler See",
+            "bundesland": "Salzburg",
+            "flaeche": 2145308,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 13,
+            "name": "Nationalpark Hohe Tauern",
+            "bundesland": "Salzburg",
+            "flaeche": 805507940,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 14,
+            "name": "Tauglgries",
+            "bundesland": "Salzburg",
+            "flaeche": 506468,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 15,
+            "name": "Bärmooser Moor",
+            "bundesland": "Salzburg",
+            "flaeche": 577544,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 16,
+            "name": "Nordmoor am Mattsee",
+            "bundesland": "Salzburg",
+            "flaeche": 36525,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 17,
+            "name": "Zeller See Südufer",
+            "bundesland": "Salzburg",
+            "flaeche": 323512,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 18,
+            "name": "Mooshamer Moor Ost",
+            "bundesland": "Salzburg",
+            "flaeche": 31900,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 19,
+            "name": "Kopfweiden am Almkanal",
+            "bundesland": "Salzburg",
+            "flaeche": 17706,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 20,
+            "name": "Pfarrkirche St. Georgen",
+            "bundesland": "Salzburg",
+            "flaeche": 655,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 21,
+            "name": "Bluntautal",
+            "bundesland": "Salzburg",
+            "flaeche": 4337905,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 22,
+            "name": "Lucia Lacke",
+            "bundesland": "Salzburg",
+            "flaeche": 34790,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 23,
+            "name": "Hinterrieding-Wasserfallkar",
+            "bundesland": "Salzburg",
+            "flaeche": 656793,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 24,
+            "name": "Pongauer Taurachtal",
+            "bundesland": "Salzburg",
+            "flaeche": 197246,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 25,
+            "name": "Rupanin",
+            "bundesland": "Salzburg",
+            "flaeche": 1440632,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 26,
+            "name": "Steindorfer Moos",
+            "bundesland": "Salzburg",
+            "flaeche": 49779,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 27,
+            "name": "Althofener Moos",
+            "bundesland": "Salzburg",
+            "flaeche": 5897,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 28,
+            "name": "Streuwiese am Salzweg",
+            "bundesland": "Salzburg",
+            "flaeche": 6150,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 29,
+            "name": "Georgenberg",
+            "bundesland": "Salzburg",
+            "flaeche": 21512,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 30,
+            "name": "Känigsbachtal",
+            "bundesland": "Salzburg",
+            "flaeche": 11726,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 31,
+            "name": "Kendlbruckergraben - Hinteralm",
+            "bundesland": "Salzburg",
+            "flaeche": 200668,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 32,
+            "name": "Lonka Mäander",
+            "bundesland": "Salzburg",
+            "flaeche": 10357,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 33,
+            "name": "Salzachauen",
+            "bundesland": "Salzburg",
+            "flaeche": 7404571,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 34,
+            "name": "Vordergnadenalm",
+            "bundesland": "Salzburg",
+            "flaeche": 153,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 35,
+            "name": "Obertauern-Hundsfeldmoor",
+            "bundesland": "Salzburg",
+            "flaeche": 992658,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 36,
+            "name": "Gschwendter Moos",
+            "bundesland": "Salzburg",
+            "flaeche": 58984,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 37,
+            "name": "Hintergnadenalm",
+            "bundesland": "Salzburg",
+            "flaeche": 33868,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 38,
+            "name": "Nikolausberg",
+            "bundesland": "Salzburg",
+            "flaeche": 5607,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 39,
+            "name": "Fraham-Aag-Zellhof",
+            "bundesland": "Salzburg",
+            "flaeche": 450592,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 40,
+            "name": "Prähauserbauerwiese",
+            "bundesland": "Salzburg",
+            "flaeche": 7634,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 41,
+            "name": "Unkenberger Mähder",
+            "bundesland": "Salzburg",
+            "flaeche": 271704,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 42,
+            "name": "Unterfelben",
+            "bundesland": "Salzburg",
+            "flaeche": 77458,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 43,
+            "name": "Drossen",
+            "bundesland": "Salzburg",
+            "flaeche": 256783,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 1,
+            "name": "Wallersee-Wenger Moor",
+            "bundesland": "Salzburg",
+            "flaeche": 2984628,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 2,
+            "name": "Winklmoos",
+            "bundesland": "Salzburg",
+            "flaeche": 780773,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 3,
+            "name": "Nationalpark Hohe Tauern",
+            "bundesland": "Salzburg",
+            "flaeche": 805507940,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 4,
+            "name": "Bärmooser Moor",
+            "bundesland": "Salzburg",
+            "flaeche": 577544,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 5,
+            "name": "Oichten-Riede",
+            "bundesland": "Salzburg",
+            "flaeche": 1037646,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 6,
+            "name": "Weidmoos",
+            "bundesland": "Salzburg",
+            "flaeche": 1405638,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 7,
+            "name": "Salzachauen",
+            "bundesland": "Salzburg",
+            "flaeche": 11202334,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 8,
+            "name": "Obertauern-Hundsfeldmoor",
+            "bundesland": "Salzburg",
+            "flaeche": 992658,
+            "link1": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+            "link2": ""
+        },
+        {
+            "id": 1,
+            "name": "Teile des steirischen Nockgebietes",
+            "bundesland": "Steiermark",
+            "flaeche": 19982942,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 2,
+            "name": "Kirchkogel bei Pernegg",
+            "bundesland": "Steiermark",
+            "flaeche": 519656,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 3,
+            "name": "Oberlauf der Pinka",
+            "bundesland": "Steiermark",
+            "flaeche": 372481,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 4,
+            "name": "Gersdorfer Altarm",
+            "bundesland": "Steiermark",
+            "flaeche": 84002,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 5,
+            "name": "Ramsauer Torf",
+            "bundesland": "Steiermark",
+            "flaeche": 23000,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 6,
+            "name": "Hochlagen der südöstlichen Schladminger Tauern",
+            "bundesland": "Steiermark",
+            "flaeche": 63990712,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 7,
+            "name": "Ã–densee",
+            "bundesland": "Steiermark",
+            "flaeche": 2036362,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 8,
+            "name": "Gamperlacke",
+            "bundesland": "Steiermark",
+            "flaeche": 862493,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 9,
+            "name": "Teile der Eisenerzer Alpen",
+            "bundesland": "Steiermark",
+            "flaeche": 43899890,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 10,
+            "name": "Ennsaltarme bei Niederstuttern",
+            "bundesland": "Steiermark",
+            "flaeche": 696132,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 11,
+            "name": "Schluchtwald der Gulling",
+            "bundesland": "Steiermark",
+            "flaeche": 1497290,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 12,
+            "name": "Steilhangmoor im Untertal",
+            "bundesland": "Steiermark",
+            "flaeche": 142272,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 13,
+            "name": "Patzenkar",
+            "bundesland": "Steiermark",
+            "flaeche": 1303469,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 14,
+            "name": "Zlaimmöser-Moore/Weißenbachalm",
+            "bundesland": "Steiermark",
+            "flaeche": 129201,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 15,
+            "name": "Furtner Teich",
+            "bundesland": "Steiermark",
+            "flaeche": 324254,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 16,
+            "name": "Flaumeichenwälder im Grazer Bergland",
+            "bundesland": "Steiermark",
+            "flaeche": 45458,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 17,
+            "name": "Hochlagen der östlichen Wölzer Tauern und Seckauer Alpen",
+            "bundesland": "Steiermark",
+            "flaeche": 140713058,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 18,
+            "name": "Pölshof bei Pöls",
+            "bundesland": "Steiermark",
+            "flaeche": 78607,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 19,
+            "name": "Schwarze und WeiÃŸe Sulm",
+            "bundesland": "Steiermark",
+            "flaeche": 2431692,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 20,
+            "name": "Dürnberger Moor",
+            "bundesland": "Steiermark",
+            "flaeche": 451203,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 21,
+            "name": "Teile des Steirischen Jogl- und Wechsellandes",
+            "bundesland": "Steiermark",
+            "flaeche": 455175600,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 22,
+            "name": "Steirische Grenzmur mit Gamlitzbach und Gnasbach",
+            "bundesland": "Steiermark",
+            "flaeche": 21871995,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 23,
+            "name": "Feistritzklamm/Herberstein",
+            "bundesland": "Steiermark",
+            "flaeche": 1248814,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 24,
+            "name": "Raabklamm",
+            "bundesland": "Steiermark",
+            "flaeche": 5555280,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 25,
+            "name": "Hartberger Gmoos",
+            "bundesland": "Steiermark",
+            "flaeche": 610405,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 26,
+            "name": "Teile des südoststeirischen Hügellandes inkl. Höll und Grabenlandbäche",
+            "bundesland": "Steiermark",
+            "flaeche": 156641466,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 27,
+            "name": "Totes Gebirge mit Altausseer See",
+            "bundesland": "Steiermark",
+            "flaeche": 239800622,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 28,
+            "name": "Hörfeld, Steiermark",
+            "bundesland": "Steiermark",
+            "flaeche": 467572,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 29,
+            "name": "Pürgschachen-Moos und ennsnahe Bereiche zwischen Selzthal und dem Gesäuseeingang",
+            "bundesland": "Steiermark",
+            "flaeche": 16167569,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 30,
+            "name": "Furtner Teich - Dürnberger Moor",
+            "bundesland": "Steiermark",
+            "flaeche": 10732979,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 31,
+            "name": "Zirbitzkogel",
+            "bundesland": "Steiermark",
+            "flaeche": 23120388,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 32,
+            "name": "Ennstal zwischen Liezen und Niederstuttern",
+            "bundesland": "Steiermark",
+            "flaeche": 25621864,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 33,
+            "name": "Peggauer Wand",
+            "bundesland": "Steiermark",
+            "flaeche": 385968,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 34,
+            "name": "Ennstaler Alpen/Gesäuse",
+            "bundesland": "Steiermark",
+            "flaeche": 145301017,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 35,
+            "name": "Lafnitztal - Neudauer Teiche",
+            "bundesland": "Steiermark",
+            "flaeche": 11852288,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 36,
+            "name": "Demmerkogel-Südhänge, Wellinggraben mit Sulm-, Saggau- und Laßnitzabschnitten und Pößnitzbach",
+            "bundesland": "Steiermark",
+            "flaeche": 21169111,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 37,
+            "name": "Wörschacher Moos und ennsnahe Bereiche",
+            "bundesland": "Steiermark",
+            "flaeche": 4016852,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 38,
+            "name": "Niedere Tauern",
+            "bundesland": "Steiermark",
+            "flaeche": 1261796240,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 39,
+            "name": "Steirisches Dachsteinplateau",
+            "bundesland": "Steiermark",
+            "flaeche": 74599459,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 40,
+            "name": "Ober- und Mittellauf der Mur mit Puxer Auwald, Puxer Wand und Gulsen",
+            "bundesland": "Steiermark",
+            "flaeche": 13190326,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 41,
+            "name": "Schloss Eggenberg",
+            "bundesland": "Steiermark",
+            "flaeche": 179148,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 42,
+            "name": "Wundschuh-Neuteich",
+            "bundesland": "Steiermark",
+            "flaeche": 31074,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 43,
+            "name": "Mitterndorfer Biotopverbund",
+            "bundesland": "Steiermark",
+            "flaeche": 2626650,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 44,
+            "name": "Deutschlandsberger Klause",
+            "bundesland": "Steiermark",
+            "flaeche": 491677,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 45,
+            "name": "Südlich gelegene Talbereiche der Göstlinger Alpen",
+            "bundesland": "Steiermark",
+            "flaeche": 6006954,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 46,
+            "name": "Hintere Pölsenalm",
+            "bundesland": "Steiermark",
+            "flaeche": 24000,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 47,
+            "name": "Plannerkessel",
+            "bundesland": "Steiermark",
+            "flaeche": 17726,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 48,
+            "name": "Teile der nördlichen Zuflüsse der Walster im Mariazeller Land",
+            "bundesland": "Steiermark",
+            "flaeche": 49467,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 49,
+            "name": "Südsteirische Teichlandschaft",
+            "bundesland": "Steiermark",
+            "flaeche": 87061,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 50,
+            "name": "Weizklamm",
+            "bundesland": "Steiermark",
+            "flaeche": 1710562,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 51,
+            "name": "Breitenau-Lantsch",
+            "bundesland": "Steiermark",
+            "flaeche": 56547,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 52,
+            "name": "Wildoner Buchkogel",
+            "bundesland": "Steiermark",
+            "flaeche": 3297713,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 53,
+            "name": "Koralpe",
+            "bundesland": "Steiermark",
+            "flaeche": 7497484,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 54,
+            "name": "Feistritz- und Krumbachgraben",
+            "bundesland": "Steiermark",
+            "flaeche": 417533,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 55,
+            "name": "Buchenwälder bei Bruck an der Mur",
+            "bundesland": "Steiermark",
+            "flaeche": 1068000,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 56,
+            "name": "Hochwechsel",
+            "bundesland": "Steiermark",
+            "flaeche": 4934522,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 57,
+            "name": "Dieslingsee",
+            "bundesland": "Steiermark",
+            "flaeche": 30658,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 58,
+            "name": "Oberlauf des Schirningbaches mit Zubringerbächen sowie Unterlauf des Enzenbaches",
+            "bundesland": "Steiermark",
+            "flaeche": 293339,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 59,
+            "name": "Serpentingebiete bei Kraubath an der Mur",
+            "bundesland": "Steiermark",
+            "flaeche": 366217,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 60,
+            "name": "Raabtalbäche",
+            "bundesland": "Steiermark",
+            "flaeche": 214946,
+            "link1": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+            "link2": ""
+        },
+        {
+            "id": 88973,
+            "name": "Bisamberg (Wiener Teil)",
+            "bundesland": "Wien",
+            "flaeche": 3806818,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-bisamberg.html"
+        },
+        {
+            "id": 88974,
+            "name": "Leopoldsberg (Teil B)",
+            "bundesland": "Wien",
+            "flaeche": 11625,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "https://www.wien.gv.at/umweltschutz/umweltgut/leopoldsberg.html"
+        },
+        {
+            "id": 88975,
+            "name": "Landschaftsschutzgebiet Liesing (Teil A,B und C)",
+            "bundesland": "Wien",
+            "flaeche": 5496004,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-liesing.html"
+        },
+        {
+            "id": 88976,
+            "name": "Landschaftsschutzgebiet Liesing (Teil A,B und C)",
+            "bundesland": "Wien",
+            "flaeche": 898468,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-liesing.html"
+        },
+        {
+            "id": 89281,
+            "name": "Nationalpark Donau-Auen (Wiener Teil)",
+            "bundesland": "Wien",
+            "flaeche": 22582482,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-nationalpark.html"
+        },
+        {
+            "id": 88971,
+            "name": "Naturschutzgebiet Lainzer Tiergarten",
+            "bundesland": "Wien",
+            "flaeche": 22580941,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/nsg-lainzertgt.html"
+        },
+        {
+            "id": 88972,
+            "name": "Leopoldsberg (Teil A)",
+            "bundesland": "Wien",
+            "flaeche": 46271,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "https://www.wien.gv.at/umweltschutz/umweltgut/leopoldsberg.html"
+        },
+        {
+            "id": 66255,
+            "name": "Landschaftsschutzgebiet Liesing (Teil A,B und C)",
+            "bundesland": "Wien",
+            "flaeche": 5496004,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-liesing.html"
+        },
+        {
+            "id": 66256,
+            "name": "Landschaftsschutzgebiet Liesing (Teil A,B und C)",
+            "bundesland": "Wien",
+            "flaeche": 898468,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-liesing.html"
+        },
+        {
+            "id": 66561,
+            "name": "Bisamberg (Wiener Teil)",
+            "bundesland": "Wien",
+            "flaeche": 3806818,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-bisamberg.html"
+        },
+        {
+            "id": 66562,
+            "name": "Nationalpark Donau-Auen (Wiener Teil)",
+            "bundesland": "Wien",
+            "flaeche": 22582482,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-nationalpark.html"
+        },
+        {
+            "id": 66563,
+            "name": "Naturschutzgebiet Lainzer Tiergarten",
+            "bundesland": "Wien",
+            "flaeche": 22580941,
+            "link1": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+            "link2": "http://www.wien.gv.at/umweltschutz/umweltgut/nsg-lainzertgt.html"
+        },
+        {
+            "id": 1,
+            "name": "SCI Moor bei St. Margarethen",
+            "bundesland": "Kaernten",
+            "flaeche": 29531,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 2,
+            "name": "SCI Ebenthaler Schlucht",
+            "bundesland": "Kaernten",
+            "flaeche": 183357,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 3,
+            "name": "SCI Wunderstätten",
+            "bundesland": "Kaernten",
+            "flaeche": 87438,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 4,
+            "name": "SCI Kosiak",
+            "bundesland": "Kaernten",
+            "flaeche": 1457644,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 5,
+            "name": "SCI Rosegger Drauschleife und Umgebung",
+            "bundesland": "Kaernten",
+            "flaeche": 854632,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 6,
+            "name": "SCI Gail im Lesachtal",
+            "bundesland": "Kaernten",
+            "flaeche": 576521,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 7,
+            "name": "SCI Kokra",
+            "bundesland": "Kaernten",
+            "flaeche": 2938742,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 8,
+            "name": "SCI St. Martiner Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 453165,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 9,
+            "name": "SCI Tscheppaschlucht-Ferlacher Horn",
+            "bundesland": "Kaernten",
+            "flaeche": 5543289,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 10,
+            "name": "SCI Kirchbachgraben",
+            "bundesland": "Kaernten",
+            "flaeche": 943110,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 11,
+            "name": "SCI Moore am Ossiacher Tauern",
+            "bundesland": "Kaernten",
+            "flaeche": 215282,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 12,
+            "name": "SCI Michaelergraben",
+            "bundesland": "Kaernten",
+            "flaeche": 1382708,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 13,
+            "name": "SCI Leonstein",
+            "bundesland": "Kaernten",
+            "flaeche": 199908,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 14,
+            "name": "SCI Mittagskogel - Karawanken Westteil",
+            "bundesland": "Kaernten",
+            "flaeche": 27012327,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 15,
+            "name": "SCI Koschuta",
+            "bundesland": "Kaernten",
+            "flaeche": 9625803,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 16,
+            "name": "SCI Ingolsthal",
+            "bundesland": "Kaernten",
+            "flaeche": 1232586,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 17,
+            "name": "SCI Kleinobir",
+            "bundesland": "Kaernten",
+            "flaeche": 14519938,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 18,
+            "name": "SCI Kronhofgraben",
+            "bundesland": "Kaernten",
+            "flaeche": 8974351,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 19,
+            "name": "SCI Gutschen",
+            "bundesland": "Kaernten",
+            "flaeche": 526131,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 20,
+            "name": "SCI Lichtegg bei Knappenberg",
+            "bundesland": "Kaernten",
+            "flaeche": 30874,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 21,
+            "name": "SCI Krampelgraben bei Höhenbergen",
+            "bundesland": "Kaernten",
+            "flaeche": 164476,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 22,
+            "name": "SCI Schloßpark Krastowitz",
+            "bundesland": "Kaernten",
+            "flaeche": 5070,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 23,
+            "name": "SCI Penkensee",
+            "bundesland": "Kaernten",
+            "flaeche": 80564,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 24,
+            "name": "SCI Trögerner Klamm",
+            "bundesland": "Kaernten",
+            "flaeche": 1479061,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 25,
+            "name": "SCI Tiffen",
+            "bundesland": "Kaernten",
+            "flaeche": 1785983,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 26,
+            "name": "SCI In der Laka",
+            "bundesland": "Kaernten",
+            "flaeche": 5000568,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 27,
+            "name": "SCI Sattnitz-Ost",
+            "bundesland": "Kaernten",
+            "flaeche": 6975175,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 28,
+            "name": "SCI Finkensteiner Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 11510,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 29,
+            "name": "SCI Finkensteiner Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 6511,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 30,
+            "name": "SCI Finkensteiner Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 4130,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 31,
+            "name": "SCI Finkensteiner Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 263,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 32,
+            "name": "SCI Finkensteiner Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 232175,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 33,
+            "name": "SCI Garnitzenklamm",
+            "bundesland": "Kaernten",
+            "flaeche": 2501400,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 34,
+            "name": "SCI Griffner Schlossberg",
+            "bundesland": "Kaernten",
+            "flaeche": 97654,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 35,
+            "name": "SCI Ziegelteich bei Hörtendorf",
+            "bundesland": "Kaernten",
+            "flaeche": 68479,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 36,
+            "name": "SCI Grünspitz-Streifenfarn in Radenthein",
+            "bundesland": "Kaernten",
+            "flaeche": 61168,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 37,
+            "name": "SCI Lanzendorfer Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 41995,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 38,
+            "name": "SCI Motschulagraben",
+            "bundesland": "Kaernten",
+            "flaeche": 388740,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 39,
+            "name": "SCI Gurkmündung",
+            "bundesland": "Kaernten",
+            "flaeche": 244363,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 40,
+            "name": "SCI/SPA Görtschacher Moos - Obermoos im Gailtal",
+            "bundesland": "Kaernten",
+            "flaeche": 12436336,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 41,
+            "name": "SCI Möserner Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 148191,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 42,
+            "name": "SCI/SPA Villacher Alpe (Dobratsch)",
+            "bundesland": "Kaernten",
+            "flaeche": 23275576,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 43,
+            "name": "SCI/SPA Schütt - Graschelitzen",
+            "bundesland": "Kaernten",
+            "flaeche": 23117027,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 44,
+            "name": "SCI Millstätter See Süd",
+            "bundesland": "Kaernten",
+            "flaeche": 162558,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 45,
+            "name": "SCI Millstätter See Süd",
+            "bundesland": "Kaernten",
+            "flaeche": 90501,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 46,
+            "name": "SCI Millstätter See Süd",
+            "bundesland": "Kaernten",
+            "flaeche": 142158,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 47,
+            "name": "SCI Watzelsdorfer Moos",
+            "bundesland": "Kaernten",
+            "flaeche": 325680,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 48,
+            "name": "SCI Gelbe Alpenrose in Lendorf",
+            "bundesland": "Kaernten",
+            "flaeche": 6457,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 49,
+            "name": "SCI Lappenbach",
+            "bundesland": "Kaernten",
+            "flaeche": 48001,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 50,
+            "name": "ökologische Vorrangzone",
+            "bundesland": "Kaernten",
+            "flaeche": 45099,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 51,
+            "name": "SCI Gut Walterskirchen",
+            "bundesland": "Kaernten",
+            "flaeche": 324119,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 52,
+            "name": "SCI/SPA Turner See",
+            "bundesland": "Kaernten",
+            "flaeche": 589541,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 53,
+            "name": "SCI/SPA Hörfeld Moor - Kärntner Anteil",
+            "bundesland": "Kaernten",
+            "flaeche": 884586,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 54,
+            "name": "SCI Hochmoor bei St. Lorenzen",
+            "bundesland": "Kaernten",
+            "flaeche": 479708,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 55,
+            "name": "SCI Höfleinmoor",
+            "bundesland": "Kaernten",
+            "flaeche": 59605,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 56,
+            "name": "Naturruhezone mit Betretungsverbot",
+            "bundesland": "Kaernten",
+            "flaeche": 145551,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 57,
+            "name": "SCI/SPA Obere Drau",
+            "bundesland": "Kaernten",
+            "flaeche": 10289827,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 58,
+            "name": "SCI Inneres Pöllatal",
+            "bundesland": "Kaernten",
+            "flaeche": 31977673,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 59,
+            "name": "SCI Wolayersee und Umgebung",
+            "bundesland": "Kaernten",
+            "flaeche": 19399818,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 60,
+            "name": "SCI/SPA Flachwasserbiotop Neudenstein",
+            "bundesland": "Kaernten",
+            "flaeche": 184476,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 61,
+            "name": "SCI/SPA Großedlinger Teich",
+            "bundesland": "Kaernten",
+            "flaeche": 79576,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 62,
+            "name": "SPA Stappitzer See und Umgebung",
+            "bundesland": "Kaernten",
+            "flaeche": 117033,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 63,
+            "name": "SCI/SPA Guntschacher Au",
+            "bundesland": "Kaernten",
+            "flaeche": 529074,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 64,
+            "name": "ökologische Vorrangzone",
+            "bundesland": "Kaernten",
+            "flaeche": 208111,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 65,
+            "name": "SPA Völkermarkter Stausee",
+            "bundesland": "Kaernten",
+            "flaeche": 843317,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 66,
+            "name": "SCI/SPA Sablatnig Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 1016452,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 67,
+            "name": "SCI Mussen",
+            "bundesland": "Kaernten",
+            "flaeche": 3988808,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 68,
+            "name": "SCI/SPA Lendspitz-Maiernigg",
+            "bundesland": "Kaernten",
+            "flaeche": 776036,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 69,
+            "name": "SCI Vellacher Kotschna",
+            "bundesland": "Kaernten",
+            "flaeche": 5858987,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 70,
+            "name": "SCI Hohe Tauern, Kärnten I",
+            "bundesland": "Kaernten",
+            "flaeche": 416051717,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 71,
+            "name": "SCI Reifnitzbach",
+            "bundesland": "Kaernten",
+            "flaeche": 16721,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 72,
+            "name": "SCI Fronwiesen",
+            "bundesland": "Kaernten",
+            "flaeche": 693752,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 73,
+            "name": "SPA Hohe Tauern, Kärnten II",
+            "bundesland": "Kaernten",
+            "flaeche": 416051717,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 74,
+            "name": "SCI Nockberge",
+            "bundesland": "Kaernten",
+            "flaeche": 79842393,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 75,
+            "name": "SCI/SPA Untere Lavant",
+            "bundesland": "Kaernten",
+            "flaeche": 1685798,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 76,
+            "name": "SCI/SPA Tiebelmündung",
+            "bundesland": "Kaernten",
+            "flaeche": 1016844,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 77,
+            "name": "SCI Ossiacher Tauern",
+            "bundesland": "Kaernten",
+            "flaeche": 9589451,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 78,
+            "name": "SCI Mannsberg-Boden",
+            "bundesland": "Kaernten",
+            "flaeche": 6829208,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 79,
+            "name": "SCI Ratschitschacher Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 233831,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 80,
+            "name": "SCI Hainsche-Moor",
+            "bundesland": "Kaernten",
+            "flaeche": 12528,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 81,
+            "name": "Betretungsverbot",
+            "bundesland": "Kaernten",
+            "flaeche": 184476,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 82,
+            "name": "SCI Kalk-Tuffquellen Völkermarkter Stausee",
+            "bundesland": "Kaernten",
+            "flaeche": 37337,
+            "link1": "https://naturschutzbund.at/kaernten.html",
+            "link2": ""
+        },
+        {
+            "id": 1,
+            "name": "Padeilemähder (vorgeschlagen)",
+            "bundesland": "Tirol",
+            "flaeche": 319070,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3317000.pdf"
+        },
+        {
+            "id": 2,
+            "name": "Tiefer-Wald",
+            "bundesland": "Tirol",
+            "flaeche": 17322,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3316000.pdf"
+        },
+        {
+            "id": 3,
+            "name": "Sinesbrunn",
+            "bundesland": "Tirol",
+            "flaeche": 518378,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3315000.pdf"
+        },
+        {
+            "id": 4,
+            "name": "Osttiroler Gletscherflüsse Isel, Schwarzach und Kalserbach",
+            "bundesland": "Tirol",
+            "flaeche": 3060439,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3314000.pdf"
+        },
+        {
+            "id": 5,
+            "name": "Tiroler Lech",
+            "bundesland": "Tirol",
+            "flaeche": 41465642,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3309000.pdf"
+        },
+        {
+            "id": 6,
+            "name": "Vilsalpsee",
+            "bundesland": "Tirol",
+            "flaeche": 18289385,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3302000.pdf"
+        },
+        {
+            "id": 7,
+            "name": "Fließer Sonnenhänge",
+            "bundesland": "Tirol",
+            "flaeche": 888349,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3313000.pdf"
+        },
+        {
+            "id": 8,
+            "name": "Arzler Pitzeklamm",
+            "bundesland": "Tirol",
+            "flaeche": 312612,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3310000.pdf"
+        },
+        {
+            "id": 9,
+            "name": "Engelswand",
+            "bundesland": "Tirol",
+            "flaeche": 398389,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3311000.pdf"
+        },
+        {
+            "id": 10,
+            "name": "Karwendel",
+            "bundesland": "Tirol",
+            "flaeche": 727260646,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3304000.pdf"
+        },
+        {
+            "id": 11,
+            "name": "Valsertal",
+            "bundesland": "Tirol",
+            "flaeche": 35182116,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3303000.pdf"
+        },
+        {
+            "id": 12,
+            "name": "ötztaler Alpen",
+            "bundesland": "Tirol",
+            "flaeche": 396210550,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3305000.pdf"
+        },
+        {
+            "id": 13,
+            "name": "Hohe Tauern, Tirol",
+            "bundesland": "Tirol",
+            "flaeche": 611192711,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3301000.pdf"
+        },
+        {
+            "id": 14,
+            "name": "Egelsee",
+            "bundesland": "Tirol",
+            "flaeche": 36251,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3307000.pdf"
+        },
+        {
+            "id": 15,
+            "name": "Schwemm",
+            "bundesland": "Tirol",
+            "flaeche": 656683,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3308000.pdf"
+        },
+        {
+            "id": 16,
+            "name": "Afrigal",
+            "bundesland": "Tirol",
+            "flaeche": 715976,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3306000.pdf"
+        },
+        {
+            "id": 1,
+            "name": "Waldviertel",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 540808128,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 19,
+            "name": "Pielachtal",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 10254381,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 11,
+            "name": "Wienerwald - Thermenregion",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 798105840,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 16,
+            "name": "Tullnerfelder Donau-Auen",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 177628670,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 9,
+            "name": "Westliches Weinviertel",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 169032330,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 12,
+            "name": "Nordöstliche Randalpen",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 54370513,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 20,
+            "name": "Feuchte Ebene - Leithaauen",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 37429675,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 7,
+            "name": "Kamp- und Kremstal",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 242803293,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 21,
+            "name": "Truppenübungsplatz Allentsteig",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 109172737,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 13,
+            "name": "Sandboden und Praterterrasse",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 160190781,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 2,
+            "name": "March-Thaya-Auen",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 148318363,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 10,
+            "name": "Steinfeld",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 115484482,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 3,
+            "name": "Ötscher - Dürrenstein",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 408524599,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 5,
+            "name": "Wachau - Jauerling",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 211076758,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 18,
+            "name": "Machland Süd",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 12265491,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 4,
+            "name": "Donau-Auen östlich von Wien",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 90996484,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 104,
+            "name": "March-Thaya-Auen",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 88794728,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 105,
+            "name": "Ã–tscher - Dürrenstein",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 425874319,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 106,
+            "name": "Donau-Auen östlich von Wien",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 95159133,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 107,
+            "name": "Wachau",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 180612455,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 108,
+            "name": "Weinviertler Klippenzone",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 31449264,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 109,
+            "name": "Kamp- und Kremstal",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 144939337,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 110,
+            "name": "Thayatal bei Hardegg",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 44284333,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 111,
+            "name": "Westliches Weinviertel",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 29822213,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 112,
+            "name": "Steinfeld",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 30183000,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 113,
+            "name": "Wienerwald - Thermenregion",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 521678246,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 114,
+            "name": "Nordöstliche Randalpen: Hohe Wand - Schneeberg - Rax",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 640824333,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 115,
+            "name": "Pannonische Sanddünen",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 25235361,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 116,
+            "name": "Tullnerfelder Donau-Auen",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 175328154,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 117,
+            "name": "Machland Süd",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 16695947,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 118,
+            "name": "Hundsheimer Berge",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 21349550,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 119,
+            "name": "Bisamberg",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 3604923,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 120,
+            "name": "Waldviertler Teich-, Heide- und Moorlandschaft",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 137191419,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 121,
+            "name": "Strudengau - Nibelungengau",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 48206027,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 122,
+            "name": "Niederösterreichische Alpenvorlandflüsse",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 70230564,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 123,
+            "name": "Feuchte Ebene - Leithaauen",
+            "bundesland": "Niederoesterreich",
+            "flaeche": 50862317,
+            "link1": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+            "link2": ""
+        },
+        {
+            "id": 1,
+            "name": "Tiroler Lech",
+            "bundesland": "Tirol",
+            "flaeche": 41465642,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3309000.pdf"
+        },
+        {
+            "id": 2,
+            "name": "ötztaler Alpen",
+            "bundesland": "Tirol",
+            "flaeche": 396210550,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3305000.pdf"
+        },
+        {
+            "id": 3,
+            "name": "Karwendel",
+            "bundesland": "Tirol",
+            "flaeche": 727260646,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3304000.pdf"
+        },
+        {
+            "id": 4,
+            "name": "Hohe Tauern, Tirol",
+            "bundesland": "Tirol",
+            "flaeche": 611192711,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3301000.pdf"
+        },
+        {
+            "id": 5,
+            "name": "Ortolan-Vorkommen Silz-Haiming-Stams",
+            "bundesland": "Tirol",
+            "flaeche": 3786365,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3312000.pdf"
+        },
+        {
+            "id": 6,
+            "name": "Valsertal",
+            "bundesland": "Tirol",
+            "flaeche": 35182116,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3303000.pdf"
+        },
+        {
+            "id": 7,
+            "name": "Vilsalpsee",
+            "bundesland": "Tirol",
+            "flaeche": 18289385,
+            "link1": "http://www.tiroler-schutzgebiete.at/",
+            "link2": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3302000.pdf"
+        },
+        {
+            "id": 1,
+            "name": "Frankinger Moos (Vogelschutzgebiet, AT3102000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 484345,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 2,
+            "name": "Europaschutzgebiet Oberes Donau- und Aschachtal (FFH-Gebiet, AT3122000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 71211110,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 3,
+            "name": "Europaschutzgebiet Oberes Donautal (Vogelschutzgebiet, AT3112000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 9246944,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 4,
+            "name": "Tanner Moor (FFH-Gebiet, AT3107000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 1242023,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 6,
+            "name": "Europaschutzgebiet Wiesengebiete im Freiwald (Vogelschutzgebiet, AT3124000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 24053903,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 7,
+            "name": "Europaschutzgebiet Wiesengebiete und Seen im Alpenvorland (FFH-Gebiet, AT3123000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 12634141,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 8,
+            "name": "Europaschutzgebiet Maltsch (Vogelschutzgebiet und FFH Gebiet, AT3115000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 3535227,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 9,
+            "name": "Rannatal (FFH-Gebiet, AT3125000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 2256006,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 10,
+            "name": "Europaschutzgebiet Böhmerwald und Mühltäler (FFH-Gebiet, AT3121000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 93503998,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 11,
+            "name": "Europaschutzgebiet Pfeiferanger (Vogelschutzgebiet, AT3103000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 1519156,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 12,
+            "name": "Europaschutzgebiet Untere Traun (Vogelschutzgebiet, AT3113000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 23096665,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 13,
+            "name": "Europaschutzgebiet Ettenau (Vogelschutzgebiet und FFH-Gebiet, AT3110000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 6251017,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 14,
+            "name": "Europaschutzgebiet Reinthaler Moos (FFH-Gebiet, AT3106000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 156220,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 15,
+            "name": "Europaschutzgebiet Traun-Donau-Auen (FFH- und Vogelschutzgebiet, AT3114000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 6637298,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 16,
+            "name": "Europaschutzgebiet Radinger Moorwiesen (FFH-Gebiet, AT3104000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 34415,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 17,
+            "name": "Europaschutzgebiet Tal der kleinen Gusen (FFH-Gebiet, AT3108000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 3474189,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 20,
+            "name": "Kalksteinmauer und Orchideenwiese Laussa (FFH-Gebiet, AT3116000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 1032705,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 21,
+            "name": "Europaschutzgebiet Waldaist und Naarn (FFH-Gebiet, AT3120000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 38371827,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 22,
+            "name": "Europaschutzgebiet Welser Heide (Vogelschutzgebiet, AT3126000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 1297992,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 23,
+            "name": "Europaschutzgebiet Mond- und Attersee (FFH-Gebiet, AT3117000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 61343405,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 24,
+            "name": "Europaschutzgebiet Salzachauen (FFH-Gebiet, AT3118000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 3369961,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 26,
+            "name": "Gerlhamer Moor (FFH-Gebiet, AT3140000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 118106,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 28,
+            "name": "Europaschutzgebiet Planwiesen (FFH-Gebiet, AT3134000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 1102836,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 29,
+            "name": "Mittlere Steyr (FFH-Gebiet, AT3136000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 1219896,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 30,
+            "name": "Erweiterung Mond- und Attersee",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 678,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 31,
+            "name": "Hornspitzmoore (FFH-Gebiet, AT3130000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 455261,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 33,
+            "name": "Leitenbach (FFH-Gebiet, AT3131000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 1106845,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 34,
+            "name": "Bäche in den Steyr- und Ennstaler Voralpen (FFH-Gebiet, AT3128000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 5051025,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 35,
+            "name": "Wiesengebiete im Mühlviertel (FFH-Gebiet, AT3129000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 5742311,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 36,
+            "name": "Eferdinger Becken (FFH-Gebiet, AT3127000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 13430080,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 37,
+            "name": "Unteres Traun- und Almtal (FFH-Gebiet, AT3139000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 12505860,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 38,
+            "name": "Heißländen und Auwälder an der Traun (FFH-Gebiet, AT3109000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 1237681,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 39,
+            "name": "Böhmerwald Erweiterung",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 11427,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 40,
+            "name": "Egelsee und Eglseemoor in der Gemeinde Unterach (FFH-Gebiet, AT3142000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 41354,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 41,
+            "name": "Offensee und angrenzendes Verlandungsmoor (FFH-Gebiet, AT3143000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 659517,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 42,
+            "name": "Teichlboden (FFH-Gebiet, AT3146000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 16569,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 43,
+            "name": "Mooswiesen Irrsee (FFH-Gebiet, AT3141000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 318972,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 45,
+            "name": "Röll (FFH-Gebiet, AT3145000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 3271552,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 46,
+            "name": "Goiserer Weißenbachtal (FFH-Gebiet, AT3144000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 10562117,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 48,
+            "name": "Schluchtwälder der Steyr- und Ennstaler Voralpen (FFH-Gebiet, AT3138000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 7749218,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 51,
+            "name": "Burgberg Losenstein (FFH-Gebiet, AT3148000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 18335,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 52,
+            "name": "Machland Nord (FFH-Gebiet, AT3132000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 11361963,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 53,
+            "name": "Hangwälder Ritzlhof (FFH-Gebiet, AT3147000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 237003,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 54,
+            "name": "Europaschutzgebiet Mösl im Ebenthal (FFH-Gebiet, AT3133000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 23404,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 55,
+            "name": "Europaschutzgebiet Quellflur bei Grueb (FFH-Gebiet, AT3135000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 42911,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 56,
+            "name": "Europaschutzgebiet Unteres Steyr- und Ennstal (FFH-Gebiet, AT3137000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 3715910,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 94,
+            "name": "Europaschutzgebiet Nationalpark Oö. Kalkalpen und Umgebung (Vogelschutzgebiet und FFH-Gebiet, AT3111000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 221191797,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 95,
+            "name": "Europaschutzgebiet Dachstein (Vogelschutzgebiet und FFH-Gebiet, AT3101000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 145734662,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 96,
+            "name": "Europaschutzgebiet Auwälder am Unteren Inn (FFH-Gebiet, AT3119000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 5792515,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 97,
+            "name": "Europaschutzgebiet Unterer Inn (Vogelschutzgebiet und FFH-Gebiet, AT3105000)",
+            "bundesland": "Oberoesterreich",
+            "flaeche": 8649942,
+            "link1": "https://www.land-oberoesterreich.gv.at/92726.htm",
+            "link2": ""
+        },
+        {
+            "id": 1,
+            "name": "Alpenmannstreu Gamperdonatal",
+            "bundesland": "Vorarlberg",
+            "flaeche": 376061,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351534",
+            "link2": ""
+        },
+        {
+            "id": 2,
+            "name": "Bangs - Matschels",
+            "bundesland": "Vorarlberg",
+            "flaeche": 4473754,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351535",
+            "link2": ""
+        },
+        {
+            "id": 3,
+            "name": "Bergwälder Klostertal",
+            "bundesland": "Vorarlberg",
+            "flaeche": 21437251,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351536",
+            "link2": ""
+        },
+        {
+            "id": 4,
+            "name": "Bregenzerachschlucht",
+            "bundesland": "Vorarlberg",
+            "flaeche": 4340027,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351537",
+            "link2": ""
+        },
+        {
+            "id": 5,
+            "name": "Davenna",
+            "bundesland": "Vorarlberg",
+            "flaeche": 1124581,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351538",
+            "link2": ""
+        },
+        {
+            "id": 6,
+            "name": "Fohramoos",
+            "bundesland": "Vorarlberg",
+            "flaeche": 542955,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351539",
+            "link2": ""
+        },
+        {
+            "id": 7,
+            "name": "Frastanzer Ried",
+            "bundesland": "Vorarlberg",
+            "flaeche": 392018,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351540",
+            "link2": ""
+        },
+        {
+            "id": 8,
+            "name": "Gadental",
+            "bundesland": "Vorarlberg",
+            "flaeche": 15437267,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351541",
+            "link2": ""
+        },
+        {
+            "id": 9,
+            "name": "Gortniel",
+            "bundesland": "Vorarlberg",
+            "flaeche": 127112,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351542",
+            "link2": ""
+        },
+        {
+            "id": 10,
+            "name": "Gsieg - Obere Mähder",
+            "bundesland": "Vorarlberg",
+            "flaeche": 731288,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351543",
+            "link2": ""
+        },
+        {
+            "id": 11,
+            "name": "Ifen",
+            "bundesland": "Vorarlberg",
+            "flaeche": 24666763,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351544",
+            "link2": ""
+        },
+        {
+            "id": 12,
+            "name": "Lauteracher Ried",
+            "bundesland": "Vorarlberg",
+            "flaeche": 5796702,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351545",
+            "link2": ""
+        },
+        {
+            "id": 13,
+            "name": "Leiblach",
+            "bundesland": "Vorarlberg",
+            "flaeche": 214525,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351546",
+            "link2": ""
+        },
+        {
+            "id": 14,
+            "name": "Ludescherberg",
+            "bundesland": "Vorarlberg",
+            "flaeche": 3773259,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351547",
+            "link2": ""
+        },
+        {
+            "id": 15,
+            "name": "Mehrerauer Seeufer - Mündung der Bregenzerach",
+            "bundesland": "Vorarlberg",
+            "flaeche": 1180249,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351548",
+            "link2": ""
+        },
+        {
+            "id": 16,
+            "name": "Rheindelta",
+            "bundesland": "Vorarlberg",
+            "flaeche": 20654852,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351549",
+            "link2": ""
+        },
+        {
+            "id": 17,
+            "name": "Rifa",
+            "bundesland": "Vorarlberg",
+            "flaeche": 126261,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351550",
+            "link2": ""
+        },
+        {
+            "id": 18,
+            "name": "Rohrach",
+            "bundesland": "Vorarlberg",
+            "flaeche": 481922,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351551",
+            "link2": ""
+        },
+        {
+            "id": 19,
+            "name": "Roßbündta",
+            "bundesland": "Vorarlberg",
+            "flaeche": 126196,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351552",
+            "link2": ""
+        },
+        {
+            "id": 20,
+            "name": "Schöneberg",
+            "bundesland": "Vorarlberg",
+            "flaeche": 474031,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351553",
+            "link2": ""
+        },
+        {
+            "id": 21,
+            "name": "Schuttfluren Tafamunt",
+            "bundesland": "Vorarlberg",
+            "flaeche": 684301,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351554",
+            "link2": ""
+        },
+        {
+            "id": 22,
+            "name": "Soren, Gleggen-Köblern, Schweizer Ried und Birken-Schwarzen Zeug",
+            "bundesland": "Vorarlberg",
+            "flaeche": 3176013,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351555",
+            "link2": ""
+        },
+        {
+            "id": 23,
+            "name": "Spirkenwald Oberer Tritt",
+            "bundesland": "Vorarlberg",
+            "flaeche": 127042,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351556",
+            "link2": ""
+        },
+        {
+            "id": 24,
+            "name": "Spirkenwälder Brandnertal",
+            "bundesland": "Vorarlberg",
+            "flaeche": 1047343,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351557",
+            "link2": ""
+        },
+        {
+            "id": 25,
+            "name": "Spirkenwälder Innergamp",
+            "bundesland": "Vorarlberg",
+            "flaeche": 438711,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351558",
+            "link2": ""
+        },
+        {
+            "id": 26,
+            "name": "Spirkenwälder Saminatal",
+            "bundesland": "Vorarlberg",
+            "flaeche": 4775273,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351559",
+            "link2": ""
+        },
+        {
+            "id": 27,
+            "name": "Spona",
+            "bundesland": "Vorarlberg",
+            "flaeche": 257668,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351560",
+            "link2": ""
+        },
+        {
+            "id": 28,
+            "name": "Torfriedbach",
+            "bundesland": "Vorarlberg",
+            "flaeche": 98768,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351561",
+            "link2": ""
+        },
+        {
+            "id": 29,
+            "name": "Übersaxen-Satteins",
+            "bundesland": "Vorarlberg",
+            "flaeche": 600490,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351562",
+            "link2": ""
+        },
+        {
+            "id": 30,
+            "name": "üble Schlucht",
+            "bundesland": "Vorarlberg",
+            "flaeche": 75920,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351563",
+            "link2": ""
+        },
+        {
+            "id": 31,
+            "name": "Unter-Überlut",
+            "bundesland": "Vorarlberg",
+            "flaeche": 228483,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351564",
+            "link2": ""
+        },
+        {
+            "id": 32,
+            "name": "Unter der Winterstaude",
+            "bundesland": "Vorarlberg",
+            "flaeche": 257984,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351565",
+            "link2": ""
+        },
+        {
+            "id": 33,
+            "name": "Unter Stellerhöhe",
+            "bundesland": "Vorarlberg",
+            "flaeche": 289295,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351566",
+            "link2": ""
+        },
+        {
+            "id": 34,
+            "name": "Unterargenstein",
+            "bundesland": "Vorarlberg",
+            "flaeche": 686966,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351567",
+            "link2": ""
+        },
+        {
+            "id": 35,
+            "name": "Verwall",
+            "bundesland": "Vorarlberg",
+            "flaeche": 121217262,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351568",
+            "link2": ""
+        },
+        {
+            "id": 36,
+            "name": "Walsbächle",
+            "bundesland": "Vorarlberg",
+            "flaeche": 167086,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351569",
+            "link2": ""
+        },
+        {
+            "id": 37,
+            "name": "Widdersteinmähder",
+            "bundesland": "Vorarlberg",
+            "flaeche": 541187,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351570",
+            "link2": ""
+        },
+        {
+            "id": 38,
+            "name": "Wiegensee",
+            "bundesland": "Vorarlberg",
+            "flaeche": 647375,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351571",
+            "link2": ""
+        },
+        {
+            "id": 39,
+            "name": "Witmoos",
+            "bundesland": "Vorarlberg",
+            "flaeche": 181844,
+            "link1": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351572",
+            "link2": ""
+        }
+    ]
+
+    // 2. Get the table element
+    var table = document.getElementById('table');
+    
+    // 3. Get the table body
+    var tableBody = document.getElementById('table-body');
+
+    // 4. For each data object create tr with tds
+    var output = data.forEach((object, i) => {
+        var tr = document.createElement('tr')
+
+        // Create column1
+        var td1 = document.createElement('td')
+        td1.innerHTML = i + 1
+        tr.appendChild(td1)
+
+        // Create column2
+        var td2 = document.createElement('td')
+        td2.innerHTML = object.name
+        tr.appendChild(td2)
+        
+        // Create column3
+        var td3 = document.createElement('td')
+        td3.innerHTML = object.bundesland
+        tr.appendChild(td3)
+        
+        // Create column4
+        var td4 = document.createElement('td')
+        td4.innerHTML = object.flaeche
+        tr.appendChild(td4)
+
+        // Create link1
+        var td5 = document.createElement('td')
+        var a1 = document.createElement('a')
+        var linkText = document.createTextNode("Info");
+        a1.appendChild(linkText);
+        a1.href = object.link1;
+        td5.appendChild(a1);
+        tr.appendChild(td5)
+
+        // Create link2
+        var td6 = document.createElement('td')
+        
+        if (object.link2 === "") {
+            var a2 = document.createElement('a')
+            var linkText2 = document.createTextNode("Schutzstatus");
+            a2.appendChild(linkText2);
+            a2.href = object.link2;
+            td6.appendChild(a2);
+        } else {
+            td6.innerHTML = "Nicht verfügbar"
+        }
+
+        tr.appendChild(td6);
+
+        // Create whole tbody with all the data
+        tableBody.appendChild(tr)  
+    })
+
+    // 5. Search the index
+    function myFunction() {
+        // Declare variables 
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("table");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+            } 
+        }
+    }
+    
+    // 6. Sortable table
+    // function sortTable(n) {
+    //     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    //     table = document.getElementById("table");
+    //     switching = true;
+    //     // Set the sorting direction to ascending:
+    //     dir = "asc"; 
+    //     /* Make a loop that will continue until
+    //     no switching has been done: */
+    //     while (switching) {
+    //         // Start by saying: no switching is done:
+    //         switching = false;
+    //         rows = table.rows;
+    //         /* Loop through all table rows (except the
+    //         first, which contains table headers): */
+    //         for (i = 1; i < (rows.length - 1); i++) {
+    //         // Start by saying there should be no switching:
+    //         shouldSwitch = false;
+    //         /* Get the two elements you want to compare,
+    //         one from current row and one from the next: */
+    //         x = rows[i].getElementsByTagName("td")[n];
+    //         y = rows[i + 1].getElementsByTagName("td")[n];
+    //         /* Check if the two rows should switch place,
+    //         based on the direction, asc or desc: */
+    //         if (dir == "asc") {
+    //             if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+    //             // If so, mark as a switch and break the loop:
+    //             shouldSwitch = true;
+    //             break;
+    //             }
+    //         } else if (dir == "desc") {
+    //             if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+    //             // If so, mark as a switch and break the loop:
+    //             shouldSwitch = true;
+    //             break;
+    //             }
+    //         }
+    //         }
+    //         if (shouldSwitch) {
+    //             /* If a switch has been marked, make the switch
+    //             and mark that a switch has been done: */
+    //             rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+    //             switching = true;
+    //             // Each time a switch is done, increase this count by 1:
+    //             switchcount ++; 
+    //         } else {
+    //             /* If no switching has been done AND the direction is "asc",
+    //             set the direction to "desc" and run the while loop again. */
+    //             if (switchcount == 0 && dir == "asc") {
+    //                 dir = "desc";
+    //                 switching = true;
+    //             }
+    //         }
+    //     }
+    // }
+
+</script>
