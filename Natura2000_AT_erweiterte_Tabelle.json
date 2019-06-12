@@ -1,0 +1,3210 @@
+[
+  {
+    "id": 1,
+    "Name": "Haidel bei Nickelsdorf",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 120985,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000678"
+  },
+  {
+    "id": 2,
+    "Name": "Zurndorfer Eichenwald und Hutweide",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 1534213,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000680"
+  },
+  {
+    "id": 3,
+    "Name": "Parndorfer Heide",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 73777,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000663"
+  },
+  {
+    "id": 4,
+    "Name": "Siegendorfer Pußta und Heide",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 278640,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000677"
+  },
+  {
+    "id": 5,
+    "Name": "Lange Leitn Neckenmarkt",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 289452,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000667"
+  },
+  {
+    "id": 6,
+    "Name": "Lafnitztal",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 5905550,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000623"
+  },
+  {
+    "id": 7,
+    "Name": "Neusiedler See – Nordöstliches Leithagebirge",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 571225271,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+  },
+  {
+    "id": 8,
+    "Name": "Südburgenländisches Hügel- und Terrassenland",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 139985616,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000960"
+  },
+  {
+    "id": 9,
+    "Name": "Fronwiesen - Johannesbach",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 478876,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000959"
+  },
+  {
+    "id": 10,
+    "Name": "Mattersburger Hügelland",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 30608390,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+  },
+  {
+    "id": 11,
+    "Name": "Bernstein-Lockenhaus-Rechnitz",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 245859683,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000958"
+  },
+  {
+    "id": 12,
+    "Name": "Haidel bei Nickelsdorf",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 120985,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000678"
+  },
+  {
+    "id": 13,
+    "Name": "Zurndorfer Eichenwald und Hutweide",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 1534213,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000680"
+  },
+  {
+    "id": 14,
+    "Name": "Parndorfer Heide",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 73777,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000663"
+  },
+  {
+    "id": 15,
+    "Name": "Siegendorfer Pußta und Heide",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 278640,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000677"
+  },
+  {
+    "id": 16,
+    "Name": "Lange Leitn Neckenmarkt",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 289452,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000667"
+  },
+  {
+    "id": 17,
+    "Name": "Lafnitztal",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 5905550,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000623"
+  },
+  {
+    "id": 18,
+    "Name": "Neusiedler See – Nordöstliches Leithagebirge",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 571225271,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+  },
+  {
+    "id": 19,
+    "Name": "Südburgenländisches Hügel- und Terrassenland",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 139985616,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000960"
+  },
+  {
+    "id": 20,
+    "Name": "Fronwiesen - Johannesbach",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 478876,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000959"
+  },
+  {
+    "id": 21,
+    "Name": "Mattersburger Hügelland",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 30608390,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+  },
+  {
+    "id": 22,
+    "Name": "Bernstein-Lockenhaus-Rechnitz",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 245859683,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000958"
+  },
+  {
+    "id": 23,
+    "Name": "Haidel bei Nickelsdorf",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 120985,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000678"
+  },
+  {
+    "id": 24,
+    "Name": "Zurndorfer Eichenwald und Hutweide",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 1534213,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000680"
+  },
+  {
+    "id": 25,
+    "Name": "Parndorfer Heide",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 73777,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000663"
+  },
+  {
+    "id": 26,
+    "Name": "Siegendorfer Pußta und Heide",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 278640,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000677"
+  },
+  {
+    "id": 27,
+    "Name": "Lange Leitn Neckenmarkt",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 289452,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000667"
+  },
+  {
+    "id": 28,
+    "Name": "Lafnitztal",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 5905550,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000623"
+  },
+  {
+    "id": 29,
+    "Name": "Neusiedler See – Nordöstliches Leithagebirge",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 571225271,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+  },
+  {
+    "id": 30,
+    "Name": "Südburgenländisches Hügel- und Terrassenland",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 139985616,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000960"
+  },
+  {
+    "id": 31,
+    "Name": "Fronwiesen - Johannesbach",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 478876,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000959"
+  },
+  {
+    "id": 32,
+    "Name": "Mattersburger Hügelland",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 30608390,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+  },
+  {
+    "id": 33,
+    "Name": "Bernstein-Lockenhaus-Rechnitz",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 245859683,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000958"
+  },
+  {
+    "id": 1,
+    "Name": "Auwiesen - Zickenbachtal",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 409378,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000490"
+  },
+  {
+    "id": 2,
+    "Name": "Parndorfer Platte - Heideboden",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 72591155,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 3,
+    "Name": "Waasen - Hansag",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 30062418,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000679"
+  },
+  {
+    "id": 4,
+    "Name": "Neusiedler See – Nordöstliches Leithagebirge",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 571225271,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+  },
+  {
+    "id": 5,
+    "Name": "Mattersburger Hügelland",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 30608390,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+  },
+  {
+    "id": 6,
+    "Name": "Auwiesen - Zickenbachtal",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 409378,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000490"
+  },
+  {
+    "id": 7,
+    "Name": "Parndorfer Platte - Heideboden",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 72591155,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 8,
+    "Name": "Waasen - Hansag",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 30062418,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000679"
+  },
+  {
+    "id": 9,
+    "Name": "Neusiedler See – Nordöstliches Leithagebirge",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 571225271,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+  },
+  {
+    "id": 10,
+    "Name": "Mattersburger Hügelland",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 30608390,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+  },
+  {
+    "id": 11,
+    "Name": "Auwiesen - Zickenbachtal",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 409378,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000490"
+  },
+  {
+    "id": 12,
+    "Name": "Parndorfer Platte - Heideboden",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 72591155,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 13,
+    "Name": "Waasen - Hansag",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 30062418,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000679"
+  },
+  {
+    "id": 14,
+    "Name": "Neusiedler See – Nordöstliches Leithagebirge",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 571225271,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000935"
+  },
+  {
+    "id": 15,
+    "Name": "Mattersburger Hügelland",
+    "Bundesland": "Burgenland",
+    "Flaeche (m²)": 30608390,
+    "weitere Informationen": "https://www.burgenland.at/themen/natur/geschuetzte-gebiete/natura-2000-gebiete/",
+    "Schutzstatus": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrBgld&Gesetzesnummer=20000968"
+  },
+  {
+    "id": 1,
+    "Name": "Wallersee-Wenger Moor",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 2984628,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 2,
+    "Name": "Zinkenbach-Karlgraben",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 1004141,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 3,
+    "Name": "Winklmoos",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 780773,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 4,
+    "Name": "Schwarzbergklamm",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 140735,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 5,
+    "Name": "Kalkhochalpen",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 237207819,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 6,
+    "Name": "Gerzkopf",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 908265,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 7,
+    "Name": "Entrische Kirche",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 63942,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 8,
+    "Name": "Überlingmoore",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 384126,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 9,
+    "Name": "Rotmoos-Käfertal",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 1687333,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 10,
+    "Name": "Untersberg-Vorland",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 1931714,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 11,
+    "Name": "Sieben Möser-Gerlosplatte",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 1677178,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 12,
+    "Name": "Seetaler See",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 2145308,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 13,
+    "Name": "Nationalpark Hohe Tauern",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 805507940,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 14,
+    "Name": "Tauglgries",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 506468,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 15,
+    "Name": "Bärmooser Moor",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 577544,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 16,
+    "Name": "Nordmoor am Mattsee",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 36525,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 17,
+    "Name": "Zeller See Südufer",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 323512,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 18,
+    "Name": "Mooshamer Moor Ost",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 31900,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 19,
+    "Name": "Kopfweiden am Almkanal",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 17706,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 20,
+    "Name": "Pfarrkirche St. Georgen",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 655,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 21,
+    "Name": "Bluntautal",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 4337905,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 22,
+    "Name": "Lucia Lacke",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 34790,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 23,
+    "Name": "Hinterrieding-Wasserfallkar",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 656793,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 24,
+    "Name": "Pongauer Taurachtal",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 197246,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 25,
+    "Name": "Rupanin",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 1440632,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 26,
+    "Name": "Steindorfer Moos",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 49779,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 27,
+    "Name": "Althofener Moos",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 5897,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 28,
+    "Name": "Streuwiese am Salzweg",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 6150,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 29,
+    "Name": "Georgenberg",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 21512,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 30,
+    "Name": "Känigsbachtal",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 11726,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 31,
+    "Name": "Kendlbruckergraben - Hinteralm",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 200668,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 32,
+    "Name": "Lonka Mäander",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 10357,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 33,
+    "Name": "Salzachauen",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 7404571,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 34,
+    "Name": "Vordergnadenalm",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 153,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 35,
+    "Name": "Obertauern-Hundsfeldmoor",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 992658,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 36,
+    "Name": "Gschwendter Moos",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 58984,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 37,
+    "Name": "Hintergnadenalm",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 33868,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 38,
+    "Name": "Nikolausberg",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 5607,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 39,
+    "Name": "Fraham-Aag-Zellhof",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 450592,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 40,
+    "Name": "Prähauserbauerwiese",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 7634,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 41,
+    "Name": "Unkenberger Mähder",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 271704,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 42,
+    "Name": "Unterfelben",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 77458,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 43,
+    "Name": "Drossen",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 256783,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 1,
+    "Name": "Wallersee-Wenger Moor",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 2984628,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 2,
+    "Name": "Winklmoos",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 780773,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 3,
+    "Name": "Nationalpark Hohe Tauern",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 805507940,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 4,
+    "Name": "Bärmooser Moor",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 577544,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 5,
+    "Name": "Oichten-Riede",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 1037646,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 6,
+    "Name": "Weidmoos",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 1405638,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 7,
+    "Name": "Salzachauen",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 11202334,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 8,
+    "Name": "Obertauern-Hundsfeldmoor",
+    "Bundesland": "Salzburg",
+    "Flaeche (m²)": 992658,
+    "weitere Informationen": "https://www.salzburg.gv.at/themen/natur/schutzgebiete",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 1,
+    "Name": "Teile des steirischen Nockgebietes",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 19982942,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 2,
+    "Name": "Kirchkogel bei Pernegg",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 519656,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 3,
+    "Name": "Oberlauf der Pinka",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 372481,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 4,
+    "Name": "Gersdorfer Altarm",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 84002,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 5,
+    "Name": "Ramsauer Torf",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 23000,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 6,
+    "Name": "Hochlagen der südöstlichen Schladminger Tauern",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 63990712,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 7,
+    "Name": "Ã–densee",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 2036362,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 8,
+    "Name": "Gamperlacke",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 862493,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 9,
+    "Name": "Teile der Eisenerzer Alpen",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 43899890,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 10,
+    "Name": "Ennsaltarme bei Niederstuttern",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 696132,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 11,
+    "Name": "Schluchtwald der Gulling",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 1497290,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 12,
+    "Name": "Steilhangmoor im Untertal",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 142272,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 13,
+    "Name": "Patzenkar",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 1303469,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 14,
+    "Name": "Zlaimmöser-Moore/Weißenbachalm",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 129201,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 15,
+    "Name": "Furtner Teich",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 324254,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 16,
+    "Name": "Flaumeichenwälder im Grazer Bergland",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 45458,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 17,
+    "Name": "Hochlagen der östlichen Wölzer Tauern und Seckauer Alpen",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 140713058,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 18,
+    "Name": "Pölshof bei Pöls",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 78607,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 19,
+    "Name": "Schwarze und WeiÃŸe Sulm",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 2431692,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 20,
+    "Name": "Dürnberger Moor",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 451203,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 21,
+    "Name": "Teile des Steirischen Jogl- und Wechsellandes",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 455175600,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 22,
+    "Name": "Steirische Grenzmur mit Gamlitzbach und Gnasbach",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 21871995,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 23,
+    "Name": "Feistritzklamm/Herberstein",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 1248814,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 24,
+    "Name": "Raabklamm",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 5555280,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 25,
+    "Name": "Hartberger Gmoos",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 610405,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 26,
+    "Name": "Teile des südoststeirischen Hügellandes inkl. Höll und Grabenlandbäche",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 156641466,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 27,
+    "Name": "Totes Gebirge mit Altausseer See",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 239800622,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 28,
+    "Name": "Hörfeld, Steiermark",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 467572,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 29,
+    "Name": "Pürgschachen-Moos und ennsnahe Bereiche zwischen Selzthal und dem Gesäuseeingang",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 16167569,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 30,
+    "Name": "Furtner Teich - Dürnberger Moor",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 10732979,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 31,
+    "Name": "Zirbitzkogel",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 23120388,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 32,
+    "Name": "Ennstal zwischen Liezen und Niederstuttern",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 25621864,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 33,
+    "Name": "Peggauer Wand",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 385968,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 34,
+    "Name": "Ennstaler Alpen/Gesäuse",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 145301017,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 35,
+    "Name": "Lafnitztal - Neudauer Teiche",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 11852288,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 36,
+    "Name": "Demmerkogel-Südhänge, Wellinggraben mit Sulm-, Saggau- und Laßnitzabschnitten und Pößnitzbach",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 21169111,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 37,
+    "Name": "Wörschacher Moos und ennsnahe Bereiche",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 4016852,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 38,
+    "Name": "Niedere Tauern",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 1261796240,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 39,
+    "Name": "Steirisches Dachsteinplateau",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 74599459,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 40,
+    "Name": "Ober- und Mittellauf der Mur mit Puxer Auwald, Puxer Wand und Gulsen",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 13190326,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 41,
+    "Name": "Schloss Eggenberg",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 179148,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 42,
+    "Name": "Wundschuh-Neuteich",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 31074,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 43,
+    "Name": "Mitterndorfer Biotopverbund",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 2626650,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 44,
+    "Name": "Deutschlandsberger Klause",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 491677,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 45,
+    "Name": "Südlich gelegene Talbereiche der Göstlinger Alpen",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 6006954,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 46,
+    "Name": "Hintere Pölsenalm",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 24000,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 47,
+    "Name": "Plannerkessel",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 17726,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 48,
+    "Name": "Teile der nördlichen Zuflüsse der Walster im Mariazeller Land",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 49467,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 49,
+    "Name": "Südsteirische Teichlandschaft",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 87061,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 50,
+    "Name": "Weizklamm",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 1710562,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 51,
+    "Name": "Breitenau-Lantsch",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 56547,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 52,
+    "Name": "Wildoner Buchkogel",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 3297713,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 53,
+    "Name": "Koralpe",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 7497484,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 54,
+    "Name": "Feistritz- und Krumbachgraben",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 417533,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 55,
+    "Name": "Buchenwälder bei Bruck an der Mur",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 1068000,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 56,
+    "Name": "Hochwechsel",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 4934522,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 57,
+    "Name": "Dieslingsee",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 30658,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 58,
+    "Name": "Oberlauf des Schirningbaches mit Zubringerbächen sowie Unterlauf des Enzenbaches",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 293339,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 59,
+    "Name": "Serpentingebiete bei Kraubath an der Mur",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 366217,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 60,
+    "Name": "Raabtalbäche",
+    "Bundesland": "Steiermark",
+    "Flaeche (m²)": 214946,
+    "weitere Informationen": "http://www.verwaltung.steiermark.at/cms/ziel/74838061/DE/",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 88973,
+    "Name": "Bisamberg (Wiener Teil)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 3806818,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-bisamberg.html"
+  },
+  {
+    "id": 88974,
+    "Name": "Leopoldsberg (Teil B)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 11625,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "https://www.wien.gv.at/umweltschutz/umweltgut/leopoldsberg.html"
+  },
+  {
+    "id": 88975,
+    "Name": "Landschaftsschutzgebiet Liesing (Teil A,B und C)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 5496004,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-liesing.html"
+  },
+  {
+    "id": 88976,
+    "Name": "Landschaftsschutzgebiet Liesing (Teil A,B und C)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 898468,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-liesing.html"
+  },
+  {
+    "id": 89281,
+    "Name": "Nationalpark Donau-Auen (Wiener Teil)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 22582482,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-nationalpark.html"
+  },
+  {
+    "id": 88971,
+    "Name": "Naturschutzgebiet Lainzer Tiergarten",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 22580941,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/nsg-lainzertgt.html"
+  },
+  {
+    "id": 88972,
+    "Name": "Leopoldsberg (Teil A)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 46271,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "https://www.wien.gv.at/umweltschutz/umweltgut/leopoldsberg.html"
+  },
+  {
+    "id": 66255,
+    "Name": "Landschaftsschutzgebiet Liesing (Teil A,B und C)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 5496004,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-liesing.html"
+  },
+  {
+    "id": 66256,
+    "Name": "Landschaftsschutzgebiet Liesing (Teil A,B und C)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 898468,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-liesing.html"
+  },
+  {
+    "id": 66561,
+    "Name": "Bisamberg (Wiener Teil)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 3806818,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-bisamberg.html"
+  },
+  {
+    "id": 66562,
+    "Name": "Nationalpark Donau-Auen (Wiener Teil)",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 22582482,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/n2-nationalpark.html"
+  },
+  {
+    "id": 66563,
+    "Name": "Naturschutzgebiet Lainzer Tiergarten",
+    "Bundesland": "Wien",
+    "Flaeche (m²)": 22580941,
+    "weitere Informationen": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/",
+    "Schutzstatus": "http://www.wien.gv.at/umweltschutz/umweltgut/nsg-lainzertgt.html"
+  },
+  {
+    "id": 1,
+    "Name": "SCI Moor bei St. Margarethen",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 29531,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 2,
+    "Name": "SCI Ebenthaler Schlucht",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 183357,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 3,
+    "Name": "SCI Wunderstätten",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 87438,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 4,
+    "Name": "SCI Kosiak",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 1457644,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 5,
+    "Name": "SCI Rosegger Drauschleife und Umgebung",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 854632,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 6,
+    "Name": "SCI Gail im Lesachtal",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 576521,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 7,
+    "Name": "SCI Kokra",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 2938742,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 8,
+    "Name": "SCI St. Martiner Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 453165,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 9,
+    "Name": "SCI Tscheppaschlucht-Ferlacher Horn",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 5543289,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 10,
+    "Name": "SCI Kirchbachgraben",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 943110,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 11,
+    "Name": "SCI Moore am Ossiacher Tauern",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 215282,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 12,
+    "Name": "SCI Michaelergraben",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 1382708,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 13,
+    "Name": "SCI Leonstein",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 199908,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 14,
+    "Name": "SCI Mittagskogel - Karawanken Westteil",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 27012327,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 15,
+    "Name": "SCI Koschuta",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 9625803,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 16,
+    "Name": "SCI Ingolsthal",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 1232586,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 17,
+    "Name": "SCI Kleinobir",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 14519938,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 18,
+    "Name": "SCI Kronhofgraben",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 8974351,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 19,
+    "Name": "SCI Gutschen",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 526131,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 20,
+    "Name": "SCI Lichtegg bei Knappenberg",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 30874,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 21,
+    "Name": "SCI Krampelgraben bei Höhenbergen",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 164476,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 22,
+    "Name": "SCI Schloßpark Krastowitz",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 5070,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 23,
+    "Name": "SCI Penkensee",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 80564,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 24,
+    "Name": "SCI Trögerner Klamm",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 1479061,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 25,
+    "Name": "SCI Tiffen",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 1785983,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 26,
+    "Name": "SCI In der Laka",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 5000568,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 27,
+    "Name": "SCI Sattnitz-Ost",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 6975175,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 28,
+    "Name": "SCI Finkensteiner Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 11510,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 29,
+    "Name": "SCI Finkensteiner Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 6511,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 30,
+    "Name": "SCI Finkensteiner Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 4130,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 31,
+    "Name": "SCI Finkensteiner Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 263,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 32,
+    "Name": "SCI Finkensteiner Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 232175,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 33,
+    "Name": "SCI Garnitzenklamm",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 2501400,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 34,
+    "Name": "SCI Griffner Schlossberg",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 97654,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 35,
+    "Name": "SCI Ziegelteich bei Hörtendorf",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 68479,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 36,
+    "Name": "SCI Grünspitz-Streifenfarn in Radenthein",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 61168,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 37,
+    "Name": "SCI Lanzendorfer Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 41995,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 38,
+    "Name": "SCI Motschulagraben",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 388740,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 39,
+    "Name": "SCI Gurkmündung",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 244363,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 40,
+    "Name": "SCI/SPA Görtschacher Moos - Obermoos im Gailtal",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 12436336,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 41,
+    "Name": "SCI Möserner Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 148191,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 42,
+    "Name": "SCI/SPA Villacher Alpe (Dobratsch)",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 23275576,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 43,
+    "Name": "SCI/SPA Schütt - Graschelitzen",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 23117027,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 44,
+    "Name": "SCI Millstätter See Süd",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 162558,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 45,
+    "Name": "SCI Millstätter See Süd",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 90501,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 46,
+    "Name": "SCI Millstätter See Süd",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 142158,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 47,
+    "Name": "SCI Watzelsdorfer Moos",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 325680,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 48,
+    "Name": "SCI Gelbe Alpenrose in Lendorf",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 6457,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 49,
+    "Name": "SCI Lappenbach",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 48001,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 50,
+    "Name": "ökologische Vorrangzone",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 45099,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 51,
+    "Name": "SCI Gut Walterskirchen",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 324119,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 52,
+    "Name": "SCI/SPA Turner See",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 589541,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 53,
+    "Name": "SCI/SPA Hörfeld Moor - Kärntner Anteil",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 884586,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 54,
+    "Name": "SCI Hochmoor bei St. Lorenzen",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 479708,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 55,
+    "Name": "SCI Höfleinmoor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 59605,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 56,
+    "Name": "Naturruhezone mit Betretungsverbot",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 145551,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 57,
+    "Name": "SCI/SPA Obere Drau",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 10289827,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 58,
+    "Name": "SCI Inneres Pöllatal",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 31977673,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 59,
+    "Name": "SCI Wolayersee und Umgebung",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 19399818,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 60,
+    "Name": "SCI/SPA Flachwasserbiotop Neudenstein",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 184476,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 61,
+    "Name": "SCI/SPA Großedlinger Teich",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 79576,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 62,
+    "Name": "SPA Stappitzer See und Umgebung",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 117033,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 63,
+    "Name": "SCI/SPA Guntschacher Au",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 529074,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 64,
+    "Name": "ökologische Vorrangzone",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 208111,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 65,
+    "Name": "SPA Völkermarkter Stausee",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 843317,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 66,
+    "Name": "SCI/SPA Sablatnig Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 1016452,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 67,
+    "Name": "SCI Mussen",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 3988808,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 68,
+    "Name": "SCI/SPA Lendspitz-Maiernigg",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 776036,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 69,
+    "Name": "SCI Vellacher Kotschna",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 5858987,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 70,
+    "Name": "SCI Hohe Tauern, Kärnten I",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 416051717,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 71,
+    "Name": "SCI Reifnitzbach",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 16721,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 72,
+    "Name": "SCI Fronwiesen",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 693752,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 73,
+    "Name": "SPA Hohe Tauern, Kärnten II",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 416051717,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 74,
+    "Name": "SCI Nockberge",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 79842393,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 75,
+    "Name": "SCI/SPA Untere Lavant",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 1685798,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 76,
+    "Name": "SCI/SPA Tiebelmündung",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 1016844,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 77,
+    "Name": "SCI Ossiacher Tauern",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 9589451,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 78,
+    "Name": "SCI Mannsberg-Boden",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 6829208,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 79,
+    "Name": "SCI Ratschitschacher Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 233831,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 80,
+    "Name": "SCI Hainsche-Moor",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 12528,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 81,
+    "Name": "Betretungsverbot",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 184476,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 82,
+    "Name": "SCI Kalk-Tuffquellen Völkermarkter Stausee",
+    "Bundesland": "Kaernten",
+    "Flaeche (m²)": 37337,
+    "weitere Informationen": "https://naturschutzbund.at/kaernten.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 1,
+    "Name": "Padeilemähder (vorgeschlagen)",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 319070,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3317000.pdf"
+  },
+  {
+    "id": 2,
+    "Name": "Tiefer-Wald",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 17322,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3316000.pdf"
+  },
+  {
+    "id": 3,
+    "Name": "Sinesbrunn",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 518378,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3315000.pdf"
+  },
+  {
+    "id": 4,
+    "Name": "Osttiroler Gletscherflüsse Isel, Schwarzach und Kalserbach",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 3060439,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3314000.pdf"
+  },
+  {
+    "id": 5,
+    "Name": "Tiroler Lech",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 41465642,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3309000.pdf"
+  },
+  {
+    "id": 6,
+    "Name": "Vilsalpsee",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 18289385,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3302000.pdf"
+  },
+  {
+    "id": 7,
+    "Name": "Fließer Sonnenhänge",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 888349,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3313000.pdf"
+  },
+  {
+    "id": 8,
+    "Name": "Arzler Pitzeklamm",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 312612,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3310000.pdf"
+  },
+  {
+    "id": 9,
+    "Name": "Engelswand",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 398389,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3311000.pdf"
+  },
+  {
+    "id": 10,
+    "Name": "Karwendel",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 727260646,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3304000.pdf"
+  },
+  {
+    "id": 11,
+    "Name": "Valsertal",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 35182116,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3303000.pdf"
+  },
+  {
+    "id": 12,
+    "Name": "ötztaler Alpen",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 396210550,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3305000.pdf"
+  },
+  {
+    "id": 13,
+    "Name": "Hohe Tauern, Tirol",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 611192711,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3301000.pdf"
+  },
+  {
+    "id": 14,
+    "Name": "Egelsee",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 36251,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3307000.pdf"
+  },
+  {
+    "id": 15,
+    "Name": "Schwemm",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 656683,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3308000.pdf"
+  },
+  {
+    "id": 16,
+    "Name": "Afrigal",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 715976,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3306000.pdf"
+  },
+  {
+    "id": 1,
+    "Name": "Waldviertel",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 540808128,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 19,
+    "Name": "Pielachtal",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 10254381,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 11,
+    "Name": "Wienerwald - Thermenregion",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 798105840,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 16,
+    "Name": "Tullnerfelder Donau-Auen",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 177628670,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 9,
+    "Name": "Westliches Weinviertel",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 169032330,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 12,
+    "Name": "Nordöstliche Randalpen",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 54370513,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 20,
+    "Name": "Feuchte Ebene - Leithaauen",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 37429675,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 7,
+    "Name": "Kamp- und Kremstal",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 242803293,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 21,
+    "Name": "Truppenübungsplatz Allentsteig",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 109172737,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 13,
+    "Name": "Sandboden und Praterterrasse",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 160190781,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 2,
+    "Name": "March-Thaya-Auen",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 148318363,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 10,
+    "Name": "Steinfeld",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 115484482,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 3,
+    "Name": "Ötscher - Dürrenstein",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 408524599,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 5,
+    "Name": "Wachau - Jauerling",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 211076758,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 18,
+    "Name": "Machland Süd",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 12265491,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 4,
+    "Name": "Donau-Auen östlich von Wien",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 90996484,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 104,
+    "Name": "March-Thaya-Auen",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 88794728,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 105,
+    "Name": "Ã–tscher - Dürrenstein",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 425874319,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 106,
+    "Name": "Donau-Auen östlich von Wien",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 95159133,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 107,
+    "Name": "Wachau",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 180612455,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 108,
+    "Name": "Weinviertler Klippenzone",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 31449264,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 109,
+    "Name": "Kamp- und Kremstal",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 144939337,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 110,
+    "Name": "Thayatal bei Hardegg",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 44284333,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 111,
+    "Name": "Westliches Weinviertel",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 29822213,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 112,
+    "Name": "Steinfeld",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 30183000,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 113,
+    "Name": "Wienerwald - Thermenregion",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 521678246,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 114,
+    "Name": "Nordöstliche Randalpen: Hohe Wand - Schneeberg - Rax",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 640824333,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 115,
+    "Name": "Pannonische Sanddünen",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 25235361,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 116,
+    "Name": "Tullnerfelder Donau-Auen",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 175328154,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 117,
+    "Name": "Machland Süd",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 16695947,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 118,
+    "Name": "Hundsheimer Berge",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 21349550,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 119,
+    "Name": "Bisamberg",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 3604923,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 120,
+    "Name": "Waldviertler Teich-, Heide- und Moorlandschaft",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 137191419,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 121,
+    "Name": "Strudengau - Nibelungengau",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 48206027,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 122,
+    "Name": "Niederösterreichische Alpenvorlandflüsse",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 70230564,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 123,
+    "Name": "Feuchte Ebene - Leithaauen",
+    "Bundesland": "Niederoesterreich",
+    "Flaeche (m²)": 50862317,
+    "weitere Informationen": "http://www.noe.gv.at/noe/Naturschutz/Naturschutz.html",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 1,
+    "Name": "Tiroler Lech",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 41465642,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3309000.pdf"
+  },
+  {
+    "id": 2,
+    "Name": "ötztaler Alpen",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 396210550,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3305000.pdf"
+  },
+  {
+    "id": 3,
+    "Name": "Karwendel",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 727260646,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3304000.pdf"
+  },
+  {
+    "id": 4,
+    "Name": "Hohe Tauern, Tirol",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 611192711,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3301000.pdf"
+  },
+  {
+    "id": 5,
+    "Name": "Ortolan-Vorkommen Silz-Haiming-Stams",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 3786365,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3312000.pdf"
+  },
+  {
+    "id": 6,
+    "Name": "Valsertal",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 35182116,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3303000.pdf"
+  },
+  {
+    "id": 7,
+    "Name": "Vilsalpsee",
+    "Bundesland": "Tirol",
+    "Flaeche (m²)": 18289385,
+    "weitere Informationen": "http://www.tiroler-schutzgebiete.at/",
+    "Schutzstatus": "https://www.tirol.gv.at/fileadmin/themen/umwelt/naturschutz/downloads/natura_2000/Standarddatenboegen/Site_AT3302000.pdf"
+  },
+  {
+    "id": 1,
+    "Name": "Frankinger Moos (Vogelschutzgebiet, AT3102000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 484345,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 2,
+    "Name": "Europaschutzgebiet Oberes Donau- und Aschachtal (FFH-Gebiet, AT3122000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 71211110,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 3,
+    "Name": "Europaschutzgebiet Oberes Donautal (Vogelschutzgebiet, AT3112000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 9246944,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 4,
+    "Name": "Tanner Moor (FFH-Gebiet, AT3107000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 1242023,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 6,
+    "Name": "Europaschutzgebiet Wiesengebiete im Freiwald (Vogelschutzgebiet, AT3124000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 24053903,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 7,
+    "Name": "Europaschutzgebiet Wiesengebiete und Seen im Alpenvorland (FFH-Gebiet, AT3123000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 12634141,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 8,
+    "Name": "Europaschutzgebiet Maltsch (Vogelschutzgebiet und FFH Gebiet, AT3115000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 3535227,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 9,
+    "Name": "Rannatal (FFH-Gebiet, AT3125000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 2256006,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 10,
+    "Name": "Europaschutzgebiet Böhmerwald und Mühltäler (FFH-Gebiet, AT3121000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 93503998,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 11,
+    "Name": "Europaschutzgebiet Pfeiferanger (Vogelschutzgebiet, AT3103000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 1519156,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 12,
+    "Name": "Europaschutzgebiet Untere Traun (Vogelschutzgebiet, AT3113000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 23096665,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 13,
+    "Name": "Europaschutzgebiet Ettenau (Vogelschutzgebiet und FFH-Gebiet, AT3110000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 6251017,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 14,
+    "Name": "Europaschutzgebiet Reinthaler Moos (FFH-Gebiet, AT3106000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 156220,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 15,
+    "Name": "Europaschutzgebiet Traun-Donau-Auen (FFH- und Vogelschutzgebiet, AT3114000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 6637298,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 16,
+    "Name": "Europaschutzgebiet Radinger Moorwiesen (FFH-Gebiet, AT3104000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 34415,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 17,
+    "Name": "Europaschutzgebiet Tal der kleinen Gusen (FFH-Gebiet, AT3108000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 3474189,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 20,
+    "Name": "Kalksteinmauer und Orchideenwiese Laussa (FFH-Gebiet, AT3116000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 1032705,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 21,
+    "Name": "Europaschutzgebiet Waldaist und Naarn (FFH-Gebiet, AT3120000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 38371827,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 22,
+    "Name": "Europaschutzgebiet Welser Heide (Vogelschutzgebiet, AT3126000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 1297992,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 23,
+    "Name": "Europaschutzgebiet Mond- und Attersee (FFH-Gebiet, AT3117000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 61343405,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 24,
+    "Name": "Europaschutzgebiet Salzachauen (FFH-Gebiet, AT3118000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 3369961,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 26,
+    "Name": "Gerlhamer Moor (FFH-Gebiet, AT3140000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 118106,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 28,
+    "Name": "Europaschutzgebiet Planwiesen (FFH-Gebiet, AT3134000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 1102836,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 29,
+    "Name": "Mittlere Steyr (FFH-Gebiet, AT3136000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 1219896,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 30,
+    "Name": "Erweiterung Mond- und Attersee",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 678,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 31,
+    "Name": "Hornspitzmoore (FFH-Gebiet, AT3130000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 455261,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 33,
+    "Name": "Leitenbach (FFH-Gebiet, AT3131000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 1106845,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 34,
+    "Name": "Bäche in den Steyr- und Ennstaler Voralpen (FFH-Gebiet, AT3128000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 5051025,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 35,
+    "Name": "Wiesengebiete im Mühlviertel (FFH-Gebiet, AT3129000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 5742311,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 36,
+    "Name": "Eferdinger Becken (FFH-Gebiet, AT3127000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 13430080,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 37,
+    "Name": "Unteres Traun- und Almtal (FFH-Gebiet, AT3139000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 12505860,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 38,
+    "Name": "Heißländen und Auwälder an der Traun (FFH-Gebiet, AT3109000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 1237681,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 39,
+    "Name": "Böhmerwald Erweiterung",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 11427,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 40,
+    "Name": "Egelsee und Eglseemoor in der Gemeinde Unterach (FFH-Gebiet, AT3142000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 41354,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 41,
+    "Name": "Offensee und angrenzendes Verlandungsmoor (FFH-Gebiet, AT3143000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 659517,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 42,
+    "Name": "Teichlboden (FFH-Gebiet, AT3146000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 16569,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 43,
+    "Name": "Mooswiesen Irrsee (FFH-Gebiet, AT3141000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 318972,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 45,
+    "Name": "Röll (FFH-Gebiet, AT3145000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 3271552,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 46,
+    "Name": "Goiserer Weißenbachtal (FFH-Gebiet, AT3144000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 10562117,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 48,
+    "Name": "Schluchtwälder der Steyr- und Ennstaler Voralpen (FFH-Gebiet, AT3138000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 7749218,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 51,
+    "Name": "Burgberg Losenstein (FFH-Gebiet, AT3148000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 18335,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 52,
+    "Name": "Machland Nord (FFH-Gebiet, AT3132000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 11361963,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 53,
+    "Name": "Hangwälder Ritzlhof (FFH-Gebiet, AT3147000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 237003,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 54,
+    "Name": "Europaschutzgebiet Mösl im Ebenthal (FFH-Gebiet, AT3133000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 23404,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 55,
+    "Name": "Europaschutzgebiet Quellflur bei Grueb (FFH-Gebiet, AT3135000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 42911,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 56,
+    "Name": "Europaschutzgebiet Unteres Steyr- und Ennstal (FFH-Gebiet, AT3137000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 3715910,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 94,
+    "Name": "Europaschutzgebiet Nationalpark Oö. Kalkalpen und Umgebung (Vogelschutzgebiet und FFH-Gebiet, AT3111000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 221191797,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 95,
+    "Name": "Europaschutzgebiet Dachstein (Vogelschutzgebiet und FFH-Gebiet, AT3101000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 145734662,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 96,
+    "Name": "Europaschutzgebiet Auwälder am Unteren Inn (FFH-Gebiet, AT3119000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 5792515,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 97,
+    "Name": "Europaschutzgebiet Unterer Inn (Vogelschutzgebiet und FFH-Gebiet, AT3105000)",
+    "Bundesland": "Oberoesterreich",
+    "Flaeche (m²)": 8649942,
+    "weitere Informationen": "https://www.land-oberoesterreich.gv.at/92726.htm",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 1,
+    "Name": "Alpenmannstreu Gamperdonatal",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 376061,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351534",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 2,
+    "Name": "Bangs - Matschels",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 4473754,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351535",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 3,
+    "Name": "Bergwälder Klostertal",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 21437251,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351536",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 4,
+    "Name": "Bregenzerachschlucht",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 4340027,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351537",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 5,
+    "Name": "Davenna",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 1124581,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351538",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 6,
+    "Name": "Fohramoos",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 542955,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351539",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 7,
+    "Name": "Frastanzer Ried",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 392018,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351540",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 8,
+    "Name": "Gadental",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 15437267,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351541",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 9,
+    "Name": "Gortniel",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 127112,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351542",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 10,
+    "Name": "Gsieg - Obere Mähder",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 731288,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351543",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 11,
+    "Name": "Ifen",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 24666763,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351544",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 12,
+    "Name": "Lauteracher Ried",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 5796702,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351545",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 13,
+    "Name": "Leiblach",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 214525,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351546",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 14,
+    "Name": "Ludescherberg",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 3773259,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351547",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 15,
+    "Name": "Mehrerauer Seeufer - Mündung der Bregenzerach",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 1180249,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351548",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 16,
+    "Name": "Rheindelta",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 20654852,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351549",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 17,
+    "Name": "Rifa",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 126261,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351550",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 18,
+    "Name": "Rohrach",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 481922,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351551",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 19,
+    "Name": "Roßbündta",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 126196,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351552",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 20,
+    "Name": "Schöneberg",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 474031,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351553",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 21,
+    "Name": "Schuttfluren Tafamunt",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 684301,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351554",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 22,
+    "Name": "Soren, Gleggen-Köblern, Schweizer Ried und Birken-Schwarzen Zeug",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 3176013,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351555",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 23,
+    "Name": "Spirkenwald Oberer Tritt",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 127042,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351556",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 24,
+    "Name": "Spirkenwälder Brandnertal",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 1047343,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351557",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 25,
+    "Name": "Spirkenwälder Innergamp",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 438711,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351558",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 26,
+    "Name": "Spirkenwälder Saminatal",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 4775273,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351559",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 27,
+    "Name": "Spona",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 257668,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351560",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 28,
+    "Name": "Torfriedbach",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 98768,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351561",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 29,
+    "Name": "Übersaxen-Satteins",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 600490,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351562",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 30,
+    "Name": "üble Schlucht",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 75920,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351563",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 31,
+    "Name": "Unter-Überlut",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 228483,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351564",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 32,
+    "Name": "Unter der Winterstaude",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 257984,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351565",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 33,
+    "Name": "Unter Stellerhöhe",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 289295,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351566",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 34,
+    "Name": "Unterargenstein",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 686966,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351567",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 35,
+    "Name": "Verwall",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 121217262,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351568",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 36,
+    "Name": "Walsbächle",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 167086,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351569",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 37,
+    "Name": "Widdersteinmähder",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 541187,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351570",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 38,
+    "Name": "Wiegensee",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 647375,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351571",
+    "Schutzstatus": ""
+  },
+  {
+    "id": 39,
+    "Name": "Witmoos",
+    "Bundesland": "Vorarlberg",
+    "Flaeche (m²)": 181844,
+    "weitere Informationen": "https://vorarlberg.at/web/land-vorarlberg/contentdetailseite/-/asset_publisher/qA6AJ38txu0k/content/europaschutzgebiete-in-vorarlberg-natura-2000-netzwerk?article_id=351572",
+    "Schutzstatus": ""
+  }
+]
