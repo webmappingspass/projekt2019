@@ -85,29 +85,6 @@ new L.Control.MiniMap(
 //definiert LayerGroup zu der später alle bundeslaender hinzugefügt werden
 const bundeslaender = L.layerGroup();
 
-/* Versuch bundeslaender mit Array und Schleife abzugreifen ########################################
-  ArrayList<String> laender = new ArrayList <String>();
-laender.add("Burgenland");
-laender.add("Kaernten");
-for (int i = 0;i<laender.size();i++){
-        console.log(laender.get(i));
-        var "laender.get(i)";
-        laender.get(i) = L.geoJson(natura2000, {
-            filter: function(feature, layer) {
-            return feature.properties.BUNDESLAND == "laender.get(i)";
-        },
-        style=myStyle
-        }).addTo(bundeslaender);
-        i.bindPopup(function(lay){
-            const props = lay.feature.properties;
-            const info = `<h1> ${props.NAME}  </h1>
-            <p> Bundesland: ${props.BUNDESLAND} <br>
-            Fläche: ${props.flaeche/1000000} Quadratkilometer </p> <br>
-            Info:   ${props.INFO ? props.INFO: "keine weitereführenden Informationen"  }  `
-            return info;
-};
-*/
-
 //Style Optionen für die Polygone
 var myStyle = {
     fillColor: '#4CAF50',
@@ -273,9 +250,9 @@ Vorarlberg.bindPopup(function(lay){
     return info;
 });
 
-//Setzt Kartenausschnitt auf bundeslaender layerGroup
+//Alle Bundesländer werden zur Karte hinzugefügt
 bundeslaender.addTo(karte);
-//karte.fitBounds(bundeslaender.getBounds()); 
+
 
 //Plugin setzt Karte auf aktuelle GeoPosition, falls Ortung aktiviert
 karte.locate({
@@ -380,8 +357,3 @@ function funcVorarlberg() {
 
 //Hash-Url
 var hash = new L.Hash(karte);
-
-
-/*
---Features sollen nicht hardgecoded geadded werden, sondern aus Array entstehen (Zeiel 109)
-*/
