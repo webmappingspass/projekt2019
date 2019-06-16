@@ -41,13 +41,14 @@
                 border: 1px solid #ccc;
             }
 
-            div.gallery:hover {
+            /*div.gallery:hover {
                 border: 1px solid #777;
-            }
+            }*/
 
             div.gallery img {
                 width: 100%;
                 height: auto;
+                margin: 30px auto;
             }
 
             div.desc {
@@ -65,12 +66,12 @@
                 width: 24.99999%;
             }
 
-            @media only screen and (max-width: 700px) {
+            /*@media only screen and (max-width: 700px) {
                 .responsive {
                     width: 49.99999%;
-                    margin: 6px 0;
+                    height: 30% margin: 6px 0;
                 }
-            }
+            }*/
 
             @media only screen and (max-width: 500px) {
                 .responsive {
@@ -83,6 +84,69 @@
                 display: table;
                 clear: both;
             }
+
+            
+                img {
+                width: 100%;
+                height: auto
+        
+
+                <a href="#openModal">Open Modal</a><div id="openModal"class="modalDialog"><div><a href="#close"title="Close"class="close">X</a><h2>Modal Box</h2><p>This is a sample modal box that can be created using the powers of CSS3.</p><p>You could do a lot of things here like have a pop-up ad that shows when your website loads,
+                or create a login/register form for users.</p></div></div>.modalDialog {
+                    position: fixed;
+                    font-family: Arial, Helvetica, sans-serif;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.8);
+                    z-index: 99999;
+                    opacity: 0;
+                    -webkit-transition: opacity 400ms ease-in;
+                    -moz-transition: opacity 400ms ease-in;
+                    transition: opacity 400ms ease-in;
+                    pointer-events: none;
+                }
+
+                .modalDialog:target {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+
+                .modalDialog>div {
+                    width: 400px;
+                    position: relative;
+                    margin: 10% auto;
+                    padding: 5px 20px 13px 20px;
+                    border-radius: 10px;
+                    background: #fff;
+                    background: -moz-linear-gradient(#fff, #999);
+                    background: -webkit-linear-gradient(#fff, #999);
+                    background: -o-linear-gradient(#fff, #999);
+                }
+
+                .close {
+                    background: #606061;
+                    color: #FFFFFF;
+                    line-height: 25px;
+                    position: absolute;
+                    right: -12px;
+                    text-align: center;
+                    top: -10px;
+                    width: 24px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    -webkit-border-radius: 12px;
+                    -moz-border-radius: 12px;
+                    border-radius: 12px;
+                    -moz-box-shadow: 1px 1px 3px #000;
+                    -webkit-box-shadow: 1px 1px 3px #000;
+                    box-shadow: 1px 1px 3px #000;
+                }
+
+                .close:hover {
+                    background: #00d9ff;
+                }
         </style>
         <h1>Natura 2000-Gebiete - Wo Europa am schönsten ist</h1>
         <h4>Eine Auswahl aus der Vielfalt der österreichischen Ökosysteme</h4>
@@ -90,9 +154,10 @@
         <div class="responsive">
             <div class="gallery">
                 <a target="_blank" href="images/lalidererwand.jpg">
-                    <img src="images/lalidererwand.jpg" alt="Laliderer Wand" width="600" height="600">
+                    <img src="images/lalidererwand.jpg" alt="Laliderer Wand" width="600" height="600"
+                    >
                 </a>
-                <div class="desc">Laliderer Wand, Karwendel (Tirol)</div>
+                <div class="desc">Laliderer Wand <hr>Karwendel (Tirol)</div>
             </div>
         </div>
 
@@ -102,7 +167,7 @@
                 <a target="_blank" href="images/altausseenarzissenwiese.jpg">
                     <img src="images/altausseenarzissenwiese.jpg" alt="Altaussee" width="600" height="400">
                 </a>
-                <div class="desc">Narzissenwiese Altaussee (Oberösterreich)</div>
+                <div class="desc">Narzissenwiese <hr>Altaussee (Oberösterreich)</div>
             </div>
         </div>
 
@@ -111,7 +176,7 @@
                 <a target="_blank" href="images/mondsee.jpg">
                     <img src="images/mondsee.jpg" alt="Mondsee" width="600" height="400">
                 </a>
-                <div class="desc">Mondsee (Oberösterreich)</div>
+                <div class="desc">Mondsee <hr>(Oberösterreich)</div>
             </div>
         </div>
 
@@ -120,7 +185,7 @@
                 <a target="_blank" href="images/lainzertiergarten.jpg/">
                     <img src="images/lainzertiergarten.jpg" alt="Lainzertiergarten" width="600" height="400">
                 </a>
-                <div class="desc">Lainzer Tiergarten (Wien)</div>
+                <div class="desc">Lainzer Tiergarten <hr>(Wien)</div>
             </div>
         </div>
 
@@ -131,7 +196,7 @@
                 <a target="_blank" href="images/verwall.jpg">
                     <img src="images/verwall.jpg" alt="Verwall" width="600" height="400">
                 </a>
-                <div class="desc">Verwall (Tirol/Vorarlberg)</div>
+                <div class="desc">Verwall <hr>(Tirol/Vorarlberg)</div>
             </div>
         </div>
 
@@ -140,7 +205,7 @@
                 <a target="_blank" href="images/neusiedlersee.jpg">
                     <img src="images/neusiedlersee.jpg" alt="Neusiedlersee" width="600" height="400">
                 </a>
-                <div class="desc">Neusiedler See (Burgenland)</div>
+                <div class="desc">Neusiedler See <hr>(Burgenland)</div>
             </div>
         </div>
 
@@ -149,7 +214,7 @@
                 <a target="_blank" href="images/drau.jpg">
                     <img src="images/drau.jpg" alt="Drau" width="600" height="400">
                 </a>
-                <div class="desc">Drautal bei Ruden (Kärnten)</div>
+                <div class="desc">Drautal bei Ruden <hr>(Kärnten)</div>
             </div>
         </div>
 
@@ -158,36 +223,84 @@
                 <a target="_blank" href="images/wachau.JPG">
                     <img src="images/wachau.JPG" alt="Wachau" width="600" height="400">
                 </a>
-                <div class="desc">Wachau (Niederösterreich)</div>
+                <div class="desc">Wachau <hr>(Niederösterreich)</div>
+            </div>
+        </div>
+
+      
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/oetztaleralpen.JPG">
+                    <img src="images/oetztaleralpen.JPG" alt="Oetztaleralpen" width="600" height="400">
+                </a>
+                <div class="desc">Ötztaler Alpen <hr>(Tirol)</div>
             </div>
         </div>
 
         <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="images/millstaettersee.JPG">
-                        <img src="images/millstaettersee.JPG" alt="Millstaettersee" width="600" height="400">
-                    </a>
-                    <div class="desc">Millstätter See (Kärnten)</div>
-                </div>
+            <div class="gallery">
+                <a target="_blank" href="images/krimmlerwasserfaelle.jpg">
+                    <img src="images/krimmlerwasserfaelle.jpg" alt="krimmlerwasserfaelle" width="600" height="400">
+                </a>
+                <div class="desc">Krimmler Wasserfälle <hr> Hohe Tauern (Salzburg)</div>
             </div>
+        </div>
 
-            <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="images/oetztaleralpen.JPG">
-                            <img src="images/oetztaleralpen.JPG" alt="Oetztaleralpen" width="600" height="400">
-                        </a>
-                        <div class="desc">Ötztaler Alpen (Tirol)</div>
-                    </div>
-                </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/millstaettersee.JPG">
+                    <img src="images/millstaettersee.JPG" alt="Millstaettersee" width="600" height="400">
+                </a>
+                <div class="desc">Millstätter See <hr>(Kärnten)</div>
+            </div>
+        </div>
 
-                <div class="responsive">
-                        <div class="gallery">
-                            <a target="_blank" href="images/raabklamm.JPG">
-                                <img src="images/raabklamm.JPG" alt="Raabklamm" width="600" height="400">
-                            </a>
-                            <div class="desc">Raabklamm (Steiermark)</div>
-                        </div>
-                    </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/duernbergermoor.jpg">
+                    <img src="images/duernbergermoor.jpg" alt="Dürnbergermoor" width="600" height="400">
+                </a>
+                <div class="desc">Dürnberger Moor <hr>(Steiermark)</div>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/dachstein.JPG">
+                    <img src="images/dachstein.JPG" alt="Dachstein" width="600" height="400">
+                </a>
+                <div class="desc">Dachstein <hr>(Salzburg)</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/rheindelta.jpg">
+                    <img src="images/rheindelta.jpg" alt="rheindelta" width="600" height="400">
+                </a>
+                <div class="desc">Rheindelta <hr>(Vorarlberg)</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/tirolerlech.JPG">
+                    <img src="images/tirolerlech.JPG" alt="tirolerlech" width="600" height="400">
+                </a>
+                <div class="desc">Tiroler Lech <hr>(Tirol)</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="images/steinernesmeer.jpg">
+                    <img src="images/steinernesmeer.jpg" alt="steinernesmeer" width="600" height="400">
+                </a>
+                <div class="desc">Steinernes Meer <hr>(Salzburg)</div>
+            </div>
+        </div>
 
         <div class="clearfix"></div>
 
