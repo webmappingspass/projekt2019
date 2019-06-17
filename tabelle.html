@@ -42,18 +42,13 @@
         <p>
             Im Folgenden finden Sie eine Zusammenstellung der Naturschutzgebiete aus der Übersichtskarte incl. weiterführenden Informationen. Mithilfe der Suchfunktion finden Sie die einzelnen Schutzgebiete.
         </p>
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Suche nach Name oder Bundesland...">
         <table class="table" id="table">
             <thead>
                 <tr>
-                    <!-- <th onclick="sortTable(0)">ID</th>
-                    <th onclick="sortTable(1)">Name</th>
-                    <th onclick="sortTable(2)">Bundesland</th>
-                    <th onclick="sortTable(3)">Größe[qm]</th> -->
-                    <th>ID</th>
                     <th>Name</th>
                     <th>Bundesland</th>
-                    <th>Größe[qm]</th>
+                    <th>Fläche [qm]</th>
                     <th>Mehr Info</th>
                     <th>Schutzstatus</th>
                 </tr>
@@ -3281,19 +3276,19 @@
     ]
 
     // 2. Get the table element
-    var table = document.getElementById('table');
+    var table = document.getElementById('table')
     
     // 3. Get the table body
-    var tableBody = document.getElementById('table-body');
+    var tableBody = document.getElementById('table-body')
 
     // 4. For each data object create tr with tds
     var output = data.forEach((object, i) => {
         var tr = document.createElement('tr')
 
         // Create column1
-        var td1 = document.createElement('td')
-        td1.innerHTML = i + 1
-        tr.appendChild(td1)
+        // var td1 = document.createElement('td')
+        // td1.innerHTML = i + 1
+        // tr.appendChild(td1)
 
         // Create column2
         var td2 = document.createElement('td')
@@ -3313,26 +3308,26 @@
         // Create link1
         var td5 = document.createElement('td')
         var a1 = document.createElement('a')
-        var linkText = document.createTextNode("Info");
-        a1.appendChild(linkText);
-        a1.href = object.link1;
-        td5.appendChild(a1);
+        var linkText = document.createTextNode("Info")
+        a1.appendChild(linkText)
+        a1.href = object.link1
+        td5.appendChild(a1)
         tr.appendChild(td5)
 
         // Create link2
         var td6 = document.createElement('td')
         
         if (object.link2 === "") {
-            var a2 = document.createElement('a')
-            var linkText2 = document.createTextNode("Schutzstatus");
-            a2.appendChild(linkText2);
-            a2.href = object.link2;
-            td6.appendChild(a2);
-        } else {
             td6.innerHTML = "Nicht verfügbar"
+        } else {
+            var a2 = document.createElement('a')
+            var linkText2 = document.createTextNode("Schutzstatus")
+            a2.appendChild(linkText2)
+            a2.href = object.link2
+            td6.appendChild(a2)
         }
 
-        tr.appendChild(td6);
+        tr.appendChild(td6)
 
         // Create whole tbody with all the data
         tableBody.appendChild(tr)  
@@ -3349,72 +3344,56 @@
 
         // Loop through all table rows, and hide those who don't match the search query
         for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[1];
+            // Suche nach Name
+            td = tr[i].getElementsByTagName("td")[0]
+            // Suche nach Bundesland
+            tdBl = tr[i].getElementsByTagName("td")[1]
             if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
+                txtValue = td.textContent || td.innerText
+                txtValue2 = tdBl.textContent || tdBl.innerText
+                if (txtValue.toUpperCase().indexOf(filter) > -1 ) {
+                    tr[i].style.display = ""
+                } else if (txtValue2.toUpperCase().indexOf(filter) > -1 ) {
+                    tr[i].style.display = ""
+                } else {
+                    tr[i].style.display = "none"
+                }
             } 
         }
     }
     
     // 6. Sortable table
-    // function sortTable(n) {
-    //     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    //     table = document.getElementById("table");
-    //     switching = true;
-    //     // Set the sorting direction to ascending:
-    //     dir = "asc"; 
-    //     /* Make a loop that will continue until
-    //     no switching has been done: */
-    //     while (switching) {
-    //         // Start by saying: no switching is done:
-    //         switching = false;
-    //         rows = table.rows;
-    //         /* Loop through all table rows (except the
-    //         first, which contains table headers): */
-    //         for (i = 1; i < (rows.length - 1); i++) {
-    //         // Start by saying there should be no switching:
-    //         shouldSwitch = false;
-    //         /* Get the two elements you want to compare,
-    //         one from current row and one from the next: */
-    //         x = rows[i].getElementsByTagName("td")[n];
-    //         y = rows[i + 1].getElementsByTagName("td")[n];
-    //         /* Check if the two rows should switch place,
-    //         based on the direction, asc or desc: */
-    //         if (dir == "asc") {
-    //             if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-    //             // If so, mark as a switch and break the loop:
-    //             shouldSwitch = true;
-    //             break;
-    //             }
-    //         } else if (dir == "desc") {
-    //             if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-    //             // If so, mark as a switch and break the loop:
-    //             shouldSwitch = true;
-    //             break;
-    //             }
-    //         }
-    //         }
-    //         if (shouldSwitch) {
-    //             /* If a switch has been marked, make the switch
-    //             and mark that a switch has been done: */
-    //             rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-    //             switching = true;
-    //             // Each time a switch is done, increase this count by 1:
-    //             switchcount ++; 
-    //         } else {
-    //             /* If no switching has been done AND the direction is "asc",
-    //             set the direction to "desc" and run the while loop again. */
-    //             if (switchcount == 0 && dir == "asc") {
-    //                 dir = "desc";
-    //                 switching = true;
-    //             }
-    //         }
-    //     }
-    // }
+    function sortTable(table, col, reverse) {
+        var tb = table.tBodies[0], // use `<tbody>` to ignore `<thead>` and `<tfoot>` rows
+            tr = Array.prototype.slice.call(tb.rows, 0), // put rows into array
+            i;
+        reverse = -((+reverse) || -1);
+        tr = tr.sort(function (a, b) { // sort rows
+            return reverse // `-1 *` if want opposite order
+                * (a.cells[col].textContent.trim() // using `.textContent.trim()` for test
+                    .localeCompare(b.cells[col].textContent.trim())
+                );
+        });
+        for(i = 0; i < tr.length; ++i) tb.appendChild(tr[i]); // append each row in order
+    }
+
+    function makeSortable(table) {
+        var th = table.tHead, i;
+        th && (th = th.rows[0]) && (th = th.cells);
+        if (th) i = th.length;
+        else return; // if no `<thead>` then do nothing
+        while (--i >= 0) (function (i) {
+            var dir = 1;
+            th[i].addEventListener('click', function () {sortTable(table, i, (dir = 1 - dir))});
+        }(i));
+    }
+
+    function makeAllSortable(parent) {
+        parent = parent || document.body;
+        var t = parent.getElementsByTagName('table'), i = t.length;
+        while (--i >= 0) makeSortable(t[i]);
+    }
+
+    window.onload = function () {makeAllSortable();};
 
 </script>
